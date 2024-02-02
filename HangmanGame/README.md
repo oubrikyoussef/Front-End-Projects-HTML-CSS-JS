@@ -24,12 +24,11 @@ Users should be able to:
 - Get New Question Every Round 
 ### Links
 
-- Live Site URL: [Click Here](https://oubrikyoussef.github.io/hangmanGame/)
+- Live Site URL: [Click Here](yo-hangman-game.netlify.app)
 
 ### Screenshot
 
-![image](https://github.com/oubrikyoussef/hangmanGame/assets/133607377/3326fa02-3ba0-48a4-b57e-bb757a17dd73)
-![image](https://github.com/oubrikyoussef/hangmanGame/assets/133607377/4768b625-fdd5-4d89-a2f7-23b48cdcd6c1)
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/494451b5-3314-4d18-be3f-7307f80e9ddf)
 
 ### Built with
 
