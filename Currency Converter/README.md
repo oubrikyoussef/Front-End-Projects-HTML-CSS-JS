@@ -25,9 +25,9 @@ Throughout the development of this project, I faced several intriguing challenge
 
 ### Screenshots
 
-![Currency Converter Screenshot 1](https://github.com/oubrikyoussef/currency-converter/assets/133607377/e2ea4b23-d7fc-436a-a3b7-356104a8b773)
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/f5e75720-11bb-465c-be86-047a7332e055)
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/2aafba11-3186-47bb-b581-a949f1ef6694)
 
-![Currency Converter Screenshot 2](https://github.com/oubrikyoussef/currency-converter/assets/133607377/a7f04b25-ca26-4edd-a6d1-4d6c63be5743)
 
 ### Demo
 
