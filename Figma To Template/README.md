@@ -36,13 +36,12 @@ To address this challenge,I've made the template with a clear and structured cod
 
 ### Screenshots
 
-![image](https://github.com/oubrikyoussef/figma_to_template/assets/133607377/f270a4f9-f804-4c40-8b36-a176328f15c1)
-![image](https://github.com/oubrikyoussef/figma_to_template/assets/133607377/e4882ccf-6d00-47dc-8d5a-d656c08eeac9)
-![image](https://github.com/oubrikyoussef/figma_to_template/assets/133607377/1b9f179b-1012-4584-bc92-40b1348b411d)
+![Uploading image.png…]()
+You can view the full website from the link below
 
 ### Links
 
-- Live Site URL: [Click Here](https://oubrik-figma-to-template.netlify.app/)
+- Live Site URL: [Click Here](yo-figma-to-template.netlify.app)
 
 ### Built with
 
