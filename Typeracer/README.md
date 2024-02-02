@@ -1,4 +1,5 @@
 # TypeRacer Game
+
 ![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/31ddd5a8-638e-4125-ad77-e3ef947929cb)
 ![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/34c0f6b9-c683-44f1-b665-086fd7be601e)
 
