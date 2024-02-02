@@ -24,7 +24,7 @@ Users should be able to:
 - Get New Question Every Round 
 ### Links
 
-- Live Site URL: [Click Here](yo-hangman-game.netlify.app)
+- Live Site URL: [Click Here](https://yo-hangman-game.netlify.app/)
 
 ### Screenshot
 
