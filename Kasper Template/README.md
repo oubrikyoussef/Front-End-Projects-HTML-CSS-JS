@@ -26,6 +26,8 @@ Users should be able to:
 
 ![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/39b4c36e-2137-4b35-a094-7366f2ce399e)
 
+You can view the full website from the link below
+
 ### Links
 
 - Live Site URL: [Click Here](https://yo-kasper.netlify.app)
