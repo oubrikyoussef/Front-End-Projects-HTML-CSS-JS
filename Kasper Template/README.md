@@ -24,13 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![image](https://github.com/oubrikyoussef/kasper-template/assets/133607377/2e5dec79-1343-46c1-a04d-9512da14764f)
-
-![image](https://github.com/oubrikyoussef/kasper-template/assets/133607377/27ea7680-8e84-4faf-a7d8-94d97bb6dc88)
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/39b4c36e-2137-4b35-a094-7366f2ce399e)
 
 ### Links
 
-- Live Site URL: [Click Here](https://oubrikyoussef.github.io/kasper-template/)
+- Live Site URL: [Click Here](https://yo-kasper.netlify.app)
 
 ### Built with
 
