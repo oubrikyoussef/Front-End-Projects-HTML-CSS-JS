@@ -24,12 +24,13 @@ Users should be able to:
   
 ### Screenshot
 
-![image](https://github.com/oubrikyoussef/personal-website/blob/main/previews/large-screen-preview.jpeg)
-![image](https://github.com/oubrikyoussef/personal-website/blob/main/previews/small-screen-preview.jpeg)
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/e9627b47-a075-4bb8-9508-8e35d368ed65)
+
+You can view the full website from the link below
 
 ### Links
 
-- Live Site URL: [Click Here](https://oubrikyoussef.github.io/personal-website/)
+- Live Site URL: [Click Here](https://yo-personal-website.netlify.app/)
 
 ### Built with
 
