@@ -1,7 +1,6 @@
 # TypeRacer Game
-![image](https://github.com/oubrikyoussef/typeracer/assets/133607377/9abbd942-dcd2-413b-93f4-5ff1e7935cf0)
-![image](https://github.com/oubrikyoussef/typeracer/assets/133607377/159a2b1c-2465-484b-a7d6-46d7ad0741b5)
-
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/31ddd5a8-638e-4125-ad77-e3ef947929cb)
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/34c0f6b9-c683-44f1-b665-086fd7be601e)
 
 TypeSpeed Game is a web-based application that offers users an engaging way to test and improve their typing speed.
 
