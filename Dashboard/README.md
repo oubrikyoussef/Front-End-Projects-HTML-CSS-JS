@@ -24,19 +24,12 @@ Users should be able to:
   
 ### Screenshot
 
-![image](https://github.com/oubrikyoussef/dashboard/assets/133607377/05175217-73b9-443f-a28e-cb832f53f04b)
-![image](https://github.com/oubrikyoussef/dashboard/assets/133607377/99f6d57d-2833-4173-87e7-86229caadcf6)
-![image](https://github.com/oubrikyoussef/dashboard/assets/133607377/40bb6b3a-104f-4d0a-a35b-796f38f77f10)
-![image](https://github.com/oubrikyoussef/dashboard/assets/133607377/70424d3e-522f-4a42-9423-886e0fd3ae29)
-![image](https://github.com/oubrikyoussef/dashboard/assets/133607377/d3eabcc4-80bf-42c4-8c1f-9a27f46e603e)
-![image](https://github.com/oubrikyoussef/dashboard/assets/133607377/5f11f1f3-27ef-4557-817e-aea9f04df0d2)
-![image](https://github.com/oubrikyoussef/dashboard/assets/133607377/7bf6dc43-6d7d-42f0-8e2a-a618397ffb04)
-![image](https://github.com/oubrikyoussef/dashboard/assets/133607377/1e25f169-0cbb-4125-9993-0ef6335a386b)
-
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/c1418999-c664-4853-89af-df376f34016f)
+You can view the full website from the link below
 
 ### Links
 
-- Live Site URL: [Click Here](https://oubrikyoussef.github.io/dashboard/)
+- Live Site URL: [Click Here](https://yo-dashboard.netlify.app/)
 
 ### Built with
 
