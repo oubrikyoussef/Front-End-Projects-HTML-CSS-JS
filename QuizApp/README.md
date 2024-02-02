@@ -1,7 +1,7 @@
 # Quiz Game Application
 
-![image](https://github.com/oubrikyoussef/quizApp/assets/133607377/e4454efc-3598-437e-8818-3ead2c48e55f)
-![image](https://github.com/oubrikyoussef/quizApp/assets/133607377/6899a695-8ad7-4e69-8647-289d88a4230b)
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/2d40cb3d-1df9-4cc1-bc92-ccd688c2cc25)
+
 
 This is a web-based quiz game application that allows players to answer questions within a time limit. The application keeps track of the player's score, handles multiple attempts, and provides audio feedback for correct and incorrect answers.
 
