@@ -23,12 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-![image](https://github.com/oubrikyoussef/leon-template-one/assets/133607377/f03e5ce2-1d04-4281-b439-02f62057cbeb)
-![image](https://github.com/oubrikyoussef/leon-template-one/assets/133607377/1b50e0c4-d1a2-4243-8ca7-2cc3ff5d0aaa)
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/d98d4f6b-6ef5-46cf-9bb6-87238cd38f35)
+
+You can view the full website from the link below
 
 ### Links
 
-- Live Site URL: [Click Here](https://oubrikyoussef.github.io/leon-template-one/)
+- Live Site URL: [Click Here](https://yo-leon-template-one.netlify.app)
 
 ### Built with
 
