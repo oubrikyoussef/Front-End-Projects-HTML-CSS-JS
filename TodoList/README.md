@@ -23,11 +23,11 @@ Users should be able to:
 - Not Lose their Todo list items after refreshing the page
 ### Links
 
-- Live Site URL: [Click Here](https://oubrikyoussef.github.io/todo-list/)
+- Live Site URL: [Click Here](https://yo-todolist.netlify.app/)
 
 ### Screenshot
 
-![image](https://github.com/oubrikyoussef/todo-list/assets/133607377/a97ccea3-c52e-42a7-ba29-1474a6613cb8)
+![image](https://github.com/oubrikyoussef/Front-End-Projects-HTML-CSS-JS/assets/133607377/71644a5d-bfb4-4a31-adf7-0d429e9a41eb)
 
 ### Built with
 
