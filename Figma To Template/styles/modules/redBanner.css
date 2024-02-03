@@ -1,0 +1,12 @@
+.redBanner {
+  background-color: var(--red-highlight, #d2483d);
+  padding-block: 3.75rem;
+  color: var(--white, #fff);
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-bottom: 2.25rem;
+}
+.redBanner__btn--black {
+  margin-inline: auto;
+  margin-top: 1rem;
+}

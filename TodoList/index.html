@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Main Style Sheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Normalization Stylesheet-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome Icons-->
+    <script src="js/all.min.js"></script>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--Main Js-->
+    <script src="js/main.js" defer></script>
+    <title>To Do List</title>
+  </head>
+  <body class="flx-c-c">
+    <div class="to-do bg-w pd-b-3">
+      <h3 class="box-heading">To-Do List</h3>
+      <form action="" class="add-remove">
+        <input
+          type="text"
+          name="note"
+          id="note"
+          placeholder="Type A Note"
+          class="br-5 place-holder border-ccc ps-relative pd-5"
+        />
+        <input type="submit" class="fz-14 br-5 main-tr" value="add task" />
+        <input type="reset" class="fz-14 br-5 main-tr" value="remove all" />
+      </form>
+      <ul class="container"></ul>
+      <div class="overlay">
+        <div class="dialog br-5 bg-w">
+          <div class="box-heading-1">Are You Sure ?</div>
+          <form action="" class="yes-no">
+            <input type="submit" class="br-5" value="Yes" />
+            <input type="reset" class="br-5" value="No" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

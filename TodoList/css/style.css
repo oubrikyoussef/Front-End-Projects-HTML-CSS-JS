@@ -1,0 +1,251 @@
+/* Start Global Rules  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --green-color: #22c55e;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+button,
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-alt-color);
+}
+/* End Global Rules  */
+
+/* Start Body Style  */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+/*Start Todo Style*/
+.to-do {
+  width: min(400px, 100%);
+  max-height: 430px;
+  overflow-y: scroll;
+  margin-inline: 0.5rem;
+  box-shadow: 8px 0 18px rgba(0, 0, 0, 0.1);
+  padding-inline: 1rem;
+}
+/*End Todo Style*/
+
+/* Start Overlay  & dialog*/
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(100%, 250px);
+  padding: 1rem 0.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+/* End Overlay  */
+/* End Body Style  */
+/* Start Background Colors & Colors  */
+.bg-w {
+  background-color: white;
+}
+.c-grey {
+  color: var(--grey-color);
+}
+.c-g {
+  color: var(--green-color);
+}
+.c-r {
+  color: var(--red-color);
+}
+/* End Background Colors & Colors  */
+
+/* Start Paddings  */
+.pd-b-3 {
+  padding-block: 1.3rem;
+}
+.pd-block-8 {
+  padding-block: 0.8rem;
+}
+
+.pd-5 {
+  padding: 0.5rem;
+}
+/* End Paddings  */
+
+/* Start Components  */
+/* Headings  */
+.box-heading {
+  margin-bottom: 0.7rem;
+  font-size: 22px;
+  font-weight: 700;
+}
+.box-heading-1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Place Holder  */
+.place-holder {
+  caret-color: var(--blue-color);
+}
+.place-holder::placeholder {
+  transition: 0.2s;
+  opacity: 1;
+  font-weight: 200;
+}
+.place-holder:focus::placeholder {
+  opacity: 0;
+}
+/* End Components  */
+
+/* Start Display */
+.flx-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flx-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flx-ic {
+  display: flex;
+  align-items: center;
+}
+/* End Display */
+
+/* Start Border  */
+.border-ccc {
+  border: 1px solid #ccc;
+}
+.border-eee-bt {
+  border-bottom: 1px solid #eee;
+}
+/* Border Radius  */
+.br-5 {
+  border-radius: 5px;
+}
+/* End Border  */
+
+/* Start Transitions  */
+.main-tr {
+  transition: 0.3s;
+}
+/* End Transitions  */
+
+/* Start Font Sizes */
+.fz-14 {
+  font-size: 14px;
+}
+/* End Font Sizes */
+
+/* Start To-Do Style  */
+i {
+  font-size: 15px;
+}
+.icons {
+  gap: 12px;
+}
+.delete:hover {
+  color: red;
+  cursor: pointer;
+}
+.done:hover {
+  color: green;
+  cursor: pointer;
+}
+.blue-btn {
+  margin-bottom: 0;
+}
+.done-task {
+  opacity: 0.7;
+}
+.done-task h4,
+.done-task p {
+  text-decoration: line-through;
+}
+input {
+  position: sticky;
+  top: 0;
+}
+input[type="submit"],
+input[type="reset"] {
+  color: #fff;
+  padding-block: 0.5rem;
+  flex-basis: calc(50% - 5px);
+  margin-top: 0.3rem;
+}
+
+input[type="submit"] {
+  background-color: var(--blue-color);
+}
+input[type="reset"] {
+  background-color: var(--red-color);
+}
+input[type="submit"]:hover {
+  background-color: var(--blue-alt-color);
+}
+input[type="reset"]:hover {
+  background-color: red;
+}
+input[type="text"] {
+  flex: 1;
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+form.add-remove {
+  margin-bottom: 0.8rem;
+}
+h4 {
+  word-break: break-all;
+  margin-right: 0.3rem;
+  font-weight: normal;
+}
+/* End To-Do Style  */

@@ -1,0 +1,14 @@
+.title.btn--black {
+  display: block;
+  width: fit-content;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.8rem 3rem 0.8rem 3rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .title.btn--black {
+    padding: 0.75rem 4.8rem;
+  }
+}

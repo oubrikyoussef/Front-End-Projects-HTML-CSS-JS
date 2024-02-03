@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQG8J1X6ZD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-EQG8J1X6ZD');
+  </script>
+    <!--Normalize Stylesheet-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Framework Stylesheet-->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome  Icons-->
+    <script
+      src="https://kit.fontawesome.com/c2e7a7f3d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard</title>
+  </head>
+  <body id="dashboard">
+    <aside class="bg-w ps-relative">
+      <h3 class="tc decoration mgt-1-5 ps-relative pd-bt-8">Youssef</h3>
+      <ul>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 active flx-ic gap-8"
+            href="index.html"
+          >
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span class="page-title d-none">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="settings.html"
+          >
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span class="page-title d-none ml-5">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="profile.html"
+          >
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span class="page-title d-none ml-5">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="projects.html"
+          >
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span class="page-title d-none ml-5">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="courses.html"
+          >
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span class="page-title d-none ml-5">Courses</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="friends.html"
+          >
+            <i class="fa-regular fa-circle-user fa-fw"></i>
+            <span class="page-title d-none ml-5">Friends</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="files.html"
+          >
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span class="page-title d-none ml-5">Files</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="plans.html"
+          >
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span class="page-title d-none ml-5">Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main class="flex-1">
+      <!-- Start Head  -->
+      <div class="head flx-sb-c bg-w ps-relative pd-1">
+        <input
+          type="text"
+          name="keywords"
+          id="keywords"
+          placeholder="Type A keyword"
+          class="br-5 place-holder border-ccc ps-relative pd-5"
+        />
+        <div class="left-col w-fit flx-sb-c">
+          <a class="bell bf-af ps-relative" href="#"
+            ><i class="fa-regular fa-bell fa-lg"></i
+          ></a>
+          <a href="#"
+            ><img src="images/avatar.png" alt="User image" class="ml-1"
+          /></a>
+        </div>
+      </div>
+      <!-- End Head  -->
+
+      <!--Start Dashboard Main Content-->
+      <div class="pd-inline-1">
+        <h1 class="main-heading w-fit bf-af ps-relative pd-bt-8">Dashboard</h1>
+        <div class="container pd-bt-3">
+          <!-- Start Welcome  -->
+          <div class="welcome br-10 bg-w over-hidden">
+            <div
+              class="background flx-sb-c bg-grey pd-b-3 pd-inline-1 ps-relative"
+            >
+              <div>
+                <h3 class="box-heading">Welcome</h3>
+                <p class="box-paragraph">Youssef</p>
+              </div>
+              <img
+                src="images/avatar.png"
+                alt="user profile picture"
+                class="avatar br-circle"
+              />
+              <img
+                src="images/welcome.png"
+                alt="Welcome Image"
+                class="welcome d-none"
+              />
+            </div>
+            <div class="infos pd-b-3 border-block-eee">
+              <div class="tc flex-1">
+                <h4 class="fw-500 mb-8">Youssef Oubrik</h4>
+                <p class="fz-14 c-grey">Student</p>
+              </div>
+              <div class="tc flex-1">
+                <h4 class="fw-500 mb-8">08</h4>
+                <p class="fz-14 c-grey">Projects</p>
+              </div>
+              <div class="tc flex-1">
+                <h4 class="fw-500 mb-8">$80</h4>
+                <p class="fz-14 c-grey">Earned</p>
+              </div>
+            </div>
+            <a href="#" class="blue-btn mr-1">Profile</a>
+          </div>
+          <!-- End Welcome  -->
+
+          <!-- Start Draft  -->
+          <div class="draft br-10 bg-w pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Quick Draft</h3>
+            <p class="box-paragraph">Write A Draft For Your Ideas</p>
+            <form action="">
+              <input
+                type="text"
+                name="draft-title"
+                id="draft-title"
+                class="br-5 bg-grey place-holder pd-5 mb-1 w-full db"
+                placeholder="Title"
+              />
+              <textarea
+                name="thought"
+                id="tought"
+                class="br-5 bg-grey place-holder pd-5 mb-1 db w-full"
+                placeholder="Your Thought"
+              ></textarea>
+            </form>
+            <a href="#" class="blue-btn">save</a>
+          </div>
+          <!-- End Draft  -->
+
+          <!-- Start Targets  -->
+          <div class="targets br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Yearly Targets</h3>
+            <p class="box-paragraph">Targets Of The Year</p>
+            <div class="row mb-1 flx-ic">
+              <div class="icon bg-lb flx-c-c">
+                <i class="fa-solid fa-dollar-sign fa-lg c-b"></i>
+              </div>
+              <div class="infos flex-1">
+                <p class="fz-14 c-grey">Money</p>
+                <p class="fz-14 fb mb-5">$20.000</p>
+                <div class="progress-holder bg-lb">
+                  <div class="progress bg-b ps-relative" style="width: 40%">
+                    <span class="bg-b c-w br-5 bf-af flx-c-c">40%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-1 flx-ic">
+              <div class="icon bg-lo flx-c-c">
+                <i class="fa-solid fa-code fa-lg c-o"></i>
+              </div>
+              <div class="infos flex-1">
+                <p class="fz-14 c-grey">Projects</p>
+                <p class="fz-14 fb mb-5">24</p>
+                <div class="progress-holder bg-lo">
+                  <div class="progress bg-o ps-relative" style="width: 50%">
+                    <span class="bg-o c-w br-5 bf-af flx-c-c">50%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-1 flx-ic">
+              <div class="icon bg-lg flx-c-c">
+                <i class="fa-solid fa-user fa-lg c-g"></i>
+              </div>
+              <div class="infos flex-1">
+                <p class="fz-14 c-grey">Team</p>
+                <p class="fz-14 fb mb-5">12</p>
+                <div class="progress-holder bg-lg">
+                  <div class="progress bg-g ps-relative" style="width: 80%">
+                    <span class="bg-g c-w br-5 bf-af flx-c-c">80%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Targets  -->
+
+          <!-- Start Tickets Statistics  -->
+          <div class="statistics br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Tickets Statistics</h3>
+            <p class="box-paragraph">Everything About Support Tickets</p>
+            <div class="wrapper">
+              <div class="box br-10 tc border-eee pd-b-3">
+                <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-o"></i>
+                <div class="fb mb-5">2500</div>
+                <p class="fz-14 c-grey">Total</p>
+              </div>
+              <div class="box br-10 tc border-eee pd-b-3">
+                <i class="fa-solid fa-spinner fa-2x mb-10 c-b"></i>
+                <div class="fb mb-5">500</div>
+                <p class="fz-14 c-grey">Pending</p>
+              </div>
+              <div class="box br-10 tc border-eee pd-b-3">
+                <i class="fa-regular fa-circle-check fa-2x mb-10 c-g"></i>
+                <div class="fb mb-5">1900</div>
+                <p class="fz-14 c-grey">Closed</p>
+              </div>
+              <div class="box br-10 tc border-eee pd-t-3">
+                <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-r"></i>
+                <div class="fb mb-5">2500</div>
+                <p class="fz-14 c-grey">Total</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Tickets Statistics  -->
+
+          <!-- Start Latest News  -->
+          <div class="news br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Latest News</h3>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col flx-ic">
+                <img src="images/news-01.png" alt="News" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">Changed The Design</h4>
+                  <p class="c-grey fz-14">A Brand New Website Design</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">10 Minutes Ago</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col flx-ic">
+                <img src="images/news-02.png" alt="News" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">Changed The Design</h4>
+                  <p class="c-grey fz-14">A Brand New Website Design</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">5 Days Ago</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col flx-ic">
+                <img src="images/news-03.png" alt="News" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">Changed The Design</h4>
+                  <p class="c-grey fz-14">A Brand New Website Design</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">7 Days Ago</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col flx-ic">
+                <img src="images/news-03.png" alt="News" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">Changed The Design</h4>
+                  <p class="c-grey fz-14">A Brand New Website Design</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">10 Days Ago</div>
+            </div>
+            <div class="box flx-sb-c pd-t-8">
+              <div class="left-col flx-ic">
+                <img src="images/news-04.png" alt="News" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">Changed The Design</h4>
+                  <p class="c-grey fz-14">A Brand New Website Design</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">15 Days Ago</div>
+            </div>
+            <a href="#" class="blue-btn">More</a>
+          </div>
+          <!-- End Latest News  -->
+
+          <!-- Start Latest tasks  -->
+          <div class="tasks br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Latest Tasks</h3>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col">
+                <h4 class="box-1-heading">Changed The Design</h4>
+                <p class="c-grey fz-14">A Brand New Website Design</p>
+              </div>
+              <div class="icons flx-ic">
+                <i class="fa-solid fa-check done c-g main-tr"></i>
+                <i class="fa-regular fa-trash-can delete c-r main-tr"></i>
+              </div>
+            </div>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col">
+                <h4 class="box-1-heading">Changed The Design</h4>
+                <p class="c-grey fz-14">A Brand New Website Design</p>
+              </div>
+              <div class="icons flx-ic">
+                <i class="fa-solid fa-check done c-g main-tr"></i>
+                <i class="fa-regular fa-trash-can delete c-r main-tr"></i>
+              </div>
+            </div>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt done-task">
+              <div class="left-col">
+                <h4 class="box-1-heading">Changed The Design</h4>
+                <p class="c-grey fz-14">A Brand New Website Design</p>
+              </div>
+              <div class="icons flx-ic">
+                <i class="fa-solid fa-check done c-g main-tr"></i>
+                <i class="fa-regular fa-trash-can delete c-r main-tr"></i>
+              </div>
+            </div>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col">
+                <h4 class="box-1-heading">Changed The Design</h4>
+                <p class="c-grey fz-14">A Brand New Website Design</p>
+              </div>
+              <div class="icons flx-ic">
+                <i class="fa-solid fa-check done c-g main-tr"></i>
+                <i class="fa-regular fa-trash-can delete c-r main-tr"></i>
+              </div>
+            </div>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt done-task">
+              <div class="left-col">
+                <h4 class="box-1-heading">Changed The Design</h4>
+                <p class="c-grey fz-14">A Brand New Website Design</p>
+              </div>
+              <div class="icons flx-ic">
+                <i class="fa-solid fa-check done c-g main-tr"></i>
+                <i class="fa-regular fa-trash-can delete c-r main-tr"></i>
+              </div>
+            </div>
+            <div class="box flx-sb-c pd-t-8">
+              <div class="left-col">
+                <h4 class="box-1-heading">Changed The Design</h4>
+                <p class="c-grey fz-14">A Brand New Website Design</p>
+              </div>
+              <div class="icons flx-ic">
+                <i class="fa-solid fa-check done c-g main-tr"></i>
+                <i class="fa-regular fa-trash-can delete c-r main-tr"></i>
+              </div>
+            </div>
+            <a href="#" class="blue-btn">More</a>
+          </div>
+          <!-- End Latest tasks  -->
+
+          <!-- Start Latest News  -->
+          <div class="top-search br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Top Search Items</h3>
+            <div class="box flx-sb-c pd-block-8">
+              <p class="fz-14 c-grey">Keyword</p>
+              <p class="fz-14 c-grey">Search Count</p>
+            </div>
+            <div class="box flx-sb-c pd-block-8">
+              <h4 class="fz-14 fw-500">HTML</h4>
+              <div class="info-box bg-grey">300</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8">
+              <h4 class="fz-14 fw-500">C</h4>
+              <div class="info-box bg-grey">220</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8">
+              <h4 class="fz-14 fw-500">CSS</h4>
+              <div class="info-box bg-grey">120</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8">
+              <h4 class="fz-14 fw-500">Javascript</h4>
+              <div class="info-box bg-grey">20</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8">
+              <h4 class="fz-14 fw-500">Java</h4>
+              <div class="info-box bg-grey">15</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8">
+              <h4 class="fz-14 fw-500">C++</h4>
+              <div class="info-box bg-grey">10</div>
+            </div>
+            <div class="box flx-sb-c pd-t-8">
+              <h4 class="fz-14 fw-500">Dart</h4>
+              <div class="info-box bg-grey">5</div>
+            </div>
+
+            <a href="#" class="blue-btn">More</a>
+            <!-- End Latest News  -->
+          </div>
+          <!-- Start Uploads  -->
+          <div class="uploads br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Latest Uploads</h3>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col flx-ic">
+                <img src="images/pdf.svg" alt="Pdf" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">my-file.pdf</h4>
+                  <p class="c-grey fz-14">Youssef</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">2.9mb</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col flx-ic">
+                <img src="images/psd.svg" alt="Psd" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">My-Psd-File.psd</h4>
+                  <p class="c-grey fz-14">Admin</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">4.3mb</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col flx-ic">
+                <img src="images/avi.svg" alt="Avi" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">My-Avi-File.avi</h4>
+                  <p class="c-grey fz-14">Admin</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">3.3mb</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8 border-eee-bt">
+              <div class="left-col flx-ic">
+                <img src="images/zip.svg" alt="Zip" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">My-Zip-File.zip</h4>
+                  <p class="c-grey fz-14">Yassin</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">3.3mb</div>
+            </div>
+            <div class="box flx-sb-c pd-block-8">
+              <div class="left-col flx-ic">
+                <img src="images/dll.svg" alt="Dll" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">My-Dll-File.dll</h4>
+                  <p class="c-grey fz-14">User</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">2.1mb</div>
+            </div>
+            <div class="box flx-sb-c pd-t-8">
+              <div class="left-col flx-ic">
+                <img src="images/eps.svg" alt="Eps" class="br-5" />
+                <div class="text-container">
+                  <h4 class="box-1-heading">My-Eps-File.eps</h4>
+                  <p class="c-grey fz-14">Designer</p>
+                </div>
+              </div>
+              <div class="right-col info-box bg-grey">2.1mb</div>
+            </div>
+            <a href="#" class="blue-btn">More</a>
+          </div>
+          <!-- End Uploads -->
+
+          <!-- Start Project Progress  -->
+          <div
+            class="project-progress br-10 bg-w over-hidden pd-b-3 pd-inline-1 ps-relative"
+          >
+            <h3 class="box-heading">Last Project Progress</h3>
+            <div class="box pd-block-8 flx-ic gap-13">
+              <div class="br-circle circle flx-c-c ps-relative">
+                <div class="inside-circle br-circle bg-b"></div>
+                <div class="line bg-b"></div>
+              </div>
+              <h4 class="box-1-heading m-0">Got The Project</h4>
+            </div>
+            <div class="box pd-block-8 flx-ic gap-13">
+              <div class="br-circle circle flx-c-c ps-relative">
+                <div class="inside-circle br-circle bg-b"></div>
+                <div class="line bg-b"></div>
+              </div>
+              <h4 class="box-1-heading m-0">Started The Project</h4>
+            </div>
+            <div class="box pd-block-8 flx-ic gap-13">
+              <div class="br-circle circle flx-c-c ps-relative">
+                <div class="inside-circle br-circle bg-b"></div>
+                <div class="line bg-b"></div>
+              </div>
+              <h4 class="box-1-heading m-0">Test The Project</h4>
+            </div>
+            <div class="box pd-block-8 flx-ic gap-13">
+              <div class="br-circle circle flx-c-c ps-relative">
+                <div class="inside-circle br-circle bg-b active"></div>
+                <div class="line bg-b"></div>
+              </div>
+              <h4 class="box-1-heading m-0">Fix Errors</h4>
+            </div>
+            <div class="box pd-t-8 flx-ic gap-13">
+              <div class="br-circle circle flx-c-c ps-relative">
+                <div class="inside-circle br-circle bg-w"></div>
+              </div>
+              <h4 class="box-1-heading m-0">Finish The Project</h4>
+            </div>
+            <img src="images/project.png" alt="rocket" />
+          </div>
+          <!-- End Project Progress -->
+
+          <!-- Start Reminders  -->
+          <div class="reminders br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Reminders</h3>
+            <div class="box pd-block-8 flx-ic gap-13">
+              <div class="br-circle circle bg-b"></div>
+              <div class="text-container pd-left-13 br-c-b">
+                <h4 class="box-1-heading">Test The Project</h4>
+                <time class="fz-14 c-grey" datetime="2022-09-28T00:00"
+                  >28th September 2022 - 12:00am</time
+                >
+              </div>
+            </div>
+            <div class="box pd-block-8 flx-ic gap-13">
+              <div class="br-circle circle bg-g"></div>
+              <div class="text-container pd-left-13 br-c-g">
+                <h4 class="box-1-heading">Test The Project</h4>
+                <time class="fz-14 c-grey" datetime="2022-09-28T00:00"
+                  >28th September 2022 - 12:00am</time
+                >
+              </div>
+            </div>
+            <div class="box pd-block-8 flx-ic gap-13">
+              <div class="br-circle circle bg-o"></div>
+              <div class="text-container pd-left-13 br-c-o">
+                <h4 class="box-1-heading">Test The Project</h4>
+                <time class="fz-14 c-grey" datetime="2022-09-28T00:00"
+                  >28th September 2022 - 12:00am</time
+                >
+              </div>
+            </div>
+            <div class="box pd-b-t flx-ic gap-13">
+              <div class="br-circle circle bg-r"></div>
+              <div class="text-container pd-left-13 br-c-r">
+                <h4 class="box-1-heading">Test The Project</h4>
+                <time class="fz-14 c-grey" datetime="2022-09-28T00:00"
+                  >28th September 2022 - 12:00am</time
+                >
+              </div>
+            </div>
+          </div>
+          <!-- End Reminders  -->
+
+          <!-- Start Latest Post  -->
+          <div
+            class="latest-post br-10 bg-w over-hidden pd-b-3 pd-inline-1 flx-column-bt"
+          >
+            <h3 class="box-heading">Latest Post</h3>
+            <div class="box pd-block-8 flx-ic gap-13 border-eee-bt">
+              <img src="images/avatar.png" alt="user image" />
+              <div class="text-container">
+                <h4 class="box-1-heading">Youssef Oubrik</h4>
+                <p class="fz-14 c-grey">About 3 Hours Ago</p>
+              </div>
+            </div>
+            <p class="fz-14 pd-b-3 border-eee-bt">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              illo nemo quaerat a eaque ipsa? Laudantium laborum, blanditiis
+              facilis libero harum recusandae, possimus minima aspernatur ullam,
+              quos maiores optio magnam distinctio quis adipisci quam
+              exercitationem?
+            </p>
+            <div class="reactions flx-sb-c pd-t-8">
+              <div class="likes flx-ic gap-8">
+                <i class="fa-regular fa-heart c-r likes main-tr"></i>
+                <div class="number fz-14">1.8K</div>
+              </div>
+              <div class="comments flx-ic gap-8">
+                <i class="fa-regular fa-comments c-b comments main-tr"></i>
+                <div class="number fz-14">1K</div>
+              </div>
+            </div>
+          </div>
+          <!-- End Latest Post  -->
+
+          <!-- Start Social States  -->
+          <div class="social-stats br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Social Media Stats</h3>
+            <div class="box flx-ic">
+              <div class="left-col icon flx-c-c bg-twitter c-w">
+                <i class="fa-brands fa-twitter fa-2x fz-18"></i>
+              </div>
+              <div class="right-col flx-sb-c flex-1 pd-inline-1 bg-twitter-l">
+                <p class="c-twitter fz-14">20K Followers</p>
+                <a href="#" class="info-box bg-twitter c-w">Follow</a>
+              </div>
+            </div>
+            <div class="box flx-ic">
+              <div class="left-col icon flx-c-c bg-facebook c-w">
+                <i class="fa-brands fa-facebook fa-2x fz-18"></i>
+              </div>
+              <div class="right-col flx-sb-c flex-1 pd-inline-1 bg-facebook-l">
+                <p class="c-facebook fz-14">100K Followers</p>
+                <a href="#" class="info-box bg-facebook c-w">Follow</a>
+              </div>
+            </div>
+            <div class="box flx-ic">
+              <div class="left-col icon flx-c-c bg-youtube c-w">
+                <i class="fa-brands fa-youtube fa-2x fz-18"></i>
+              </div>
+              <div class="right-col flx-sb-c flex-1 pd-inline-1 bg-youtube-l">
+                <p class="c-youtube fz-14">53K Followers</p>
+                <a href="#" class="info-box bg-youtube c-w">Follow</a>
+              </div>
+            </div>
+            <div class="box flx-ic">
+              <div class="left-col icon flx-c-c bg-linkedin c-w">
+                <i class="fa-brands fa-linkedin fa-2x fz-18"></i>
+              </div>
+              <div class="right-col flx-sb-c flex-1 pd-inline-1 bg-linkedin-l">
+                <p class="c-linkedin fz-14">11K Followers</p>
+                <a href="#" class="info-box bg-linkedin c-w">Follow</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Social States  -->
+          <div class="projects br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Projects</h3>
+            <table class="fz-14 w-full border-ccc">
+              <thead>
+                <th class="bg-grey">Name</th>
+                <th class="bg-grey">Finish Date</th>
+                <th class="bg-grey">Client</th>
+                <th class="bg-grey">Price</th>
+                <th class="bg-grey">Team</th>
+                <th class="bg-grey">Status</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box pending c-w">Pending</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box in-progress c-w">In Progress</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box completed c-w">Completed</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box rejected c-w">Rejected</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box pending c-w">Pending</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box in-progress c-w">In Progress</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box completed c-w">Completed</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box rejected w-fit c-w">Rejected</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box pending c-w">Pending</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box in-progress w-fit c-w"
+                      >In Progress</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box completed c-w">Completed</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td media-title="Name :">Portofolio Website</td>
+                  <td media-title="Finish Date :">10 May 2025</td>
+                  <td media-title="Client :">Ali Ahmed</td>
+                  <td media-title="Price :">$200</td>
+                  <td media-title="Team :" class="team">
+                    <div class="team-profiles flx-c-c">
+                      <img src="images/team-01.png" alt="team member" />
+                      <img src="images/team-02.png" alt="team member" />
+                      <img src="images/team-03.png" alt="team member" />
+                      <img src="images/team-05.png" alt="team member" />
+                    </div>
+                  </td>
+                  <td media-title="Status :">
+                    <span class="info-box rejected c-w">Rejected</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!--End Dashboard Main Content-->
+    </main>
+  </body>
+</html>

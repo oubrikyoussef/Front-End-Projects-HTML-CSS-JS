@@ -1,0 +1,85 @@
+/* Start Global Rules  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-alt-color);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input[type="text"],
+textarea {
+  font-size: 14px;
+  font-weight: 300;
+}
+ul {
+  list-style: none;
+}
+.place-holder {
+  caret-color: var(--blue-color);
+}
+.place-holder::placeholder {
+  font-size: 13px;
+  transition: 0.2s;
+  opacity: 1;
+  font-weight: 200;
+}
+.place-holder:focus::placeholder {
+  opacity: 0;
+}
+input:disabled {
+  cursor: no-drop;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+input:disabled {
+  background-color: #f6f6f6;
+}
+label {
+  width: fit-content;
+}
+main .container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
+}
+body.col-3 main .container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+}

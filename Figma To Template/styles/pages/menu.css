@@ -1,0 +1,63 @@
+/* | Start Menu Section  */
+.menu {
+  max-width: 70.5625rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+/* End Menu Section  */
+
+/* | Start Menus Style  */
+.menus {
+  text-align: center;
+  background-color: var(--white, #fff);
+  padding-block: 4.16rem;
+  margin-top: 2.25rem;
+  margin-bottom: 4.5rem;
+}
+.menus__img {
+  width: 8.09rem;
+  margin-bottom: 2.95rem;
+}
+
+.menus__plat:not(:last-of-type) {
+  margin-bottom: 1.12rem;
+}
+.menus h2 {
+  margin-bottom: 2.92rem;
+}
+.menus p {
+  margin-bottom: 3.02rem;
+}
+/* End Menus Style  */
+
+/* | Start Media Queries */
+
+@media screen and (max-width: 768px) {
+  /* || Start Menu Section  */
+  .menu {
+    text-align: center;
+  }
+  /* || End Menu Section  */
+
+  /* || Start Redbanner Style  */
+  .menu-page .redBanner {
+    margin-top: 3.6rem;
+  }
+  /* End Redbanner Style  */
+
+  /* || Start Menus Style  */
+  .menus {
+    padding-inline: 0.5rem;
+  }
+  .menus p {
+    display: none;
+  }
+  .menus h3:not(:last-of-type) {
+    margin-bottom: 0.8rem;
+  }
+  .menus h2 {
+    margin-bottom: 0.5rem;
+  }
+  /* End Menus Style  */
+}
+/* End Media Queries */

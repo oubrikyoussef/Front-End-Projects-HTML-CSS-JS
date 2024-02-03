@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Currency Converter" />
+    <meta
+      name="description"
+      content="Currency Converter - Easily convert currencies with real-time exchange rates."
+    />
+    <meta
+      name="keywords"
+      content="currency converter, exchange rates, currency conversion"
+    />
+    <meta name="author" content="Youssef Oubrik , From Coding Nepal Tutorial" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="english" />
+    <meta name="rating" content="safe for kids" />
+    <meta name="revised" content="Friday, September 22th, 2023, 11:06 am" />
+    <!-- Ogp Tags  -->
+
+    <meta property="og:title" content="Currency Converter" />
+    <meta
+      property="og:description"
+      content="Easily convert currencies with real-time exchange rates."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <!--Currency Exchange icon by Icons8-->
+    <title>Currency Converter</title>
+
+    <!-- Main Style Sheet -->
+
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- Normalize Style Sheet -->
+    <link rel="stylesheet" href="style/normalize.css" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h3 class="container__heading">Currency Converter</h3>
+      <form action="#">
+        <label>Enter Amount</label>
+        <input type="text" name="amount" id="amount" class="form__input" />
+        <div class="form__drop-list">
+          <div>
+            <label>from</label>
+            <div class="drop-list__select-box">
+              <img width="20" />
+              <select name="from" id="from" ></select>
+            </div>
+          </div>
+          <div class="form__icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div>
+            <label>to</label>
+            <div class="drop-list__select-box">
+              <img width="20" />
+              <select name="to" id="to" ></select>
+            </div>
+          </div>
+        </div>
+        <div class="form__exchange-rate">
+          You'll be able to see exchange rate here 
+        </div>
+        <button type="submit" class="form__submit">Get Exchange Rate</button>
+        <p class="form__latest-update">Lastest Update : <span></span></p>
+      </form>
+    </div>
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

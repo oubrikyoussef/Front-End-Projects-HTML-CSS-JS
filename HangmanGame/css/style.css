@@ -1,0 +1,342 @@
+/* Reset and Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Variables */
+:root {
+  --rope-offset: 95px;
+  --rope-height: 40px;
+  --line-width: 3px;
+  --backbone-height: 60px;
+  --hangman-container-padding: 1rem;
+  --rope-node-width: 55px;
+  --rope-node-padding: 5px;
+}
+
+/* Global Styles */
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-color: #cbebfd1f;
+}
+
+header,
+main,
+footer {
+  margin-inline: auto;
+  width: 90%;
+}
+
+header {
+  padding-block: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Header Styles */
+.header__logo {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: rgb(54, 197, 183);
+}
+
+.header__toggle-theme {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* Main Content Styles */
+.main__interaction {
+  padding-block: 1rem;
+  margin-top: 1.5rem;
+  border-block: 1px solid #000;
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 920px) {
+  .main__interaction {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* Keyboard Styles */
+.interaction__keyboard {
+  flex: 1;
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.interaction__keyboard > div {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  background-color: rgb(4 169 152);
+  color: #fff;
+  font-weight: bold;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.interaction__keyboard > div:hover {
+  transform: scale(1.02) rotate(5deg);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.interaction__keyboard > div.active {
+  background-color: #d6d6d6;
+}
+
+.interaction__keyboard > div.active:hover {
+  transform: none;
+  opacity: 1;
+  cursor: unset;
+  background-color: #d6d6d6;
+}
+
+/* Hangman Styles */
+.interaction__hangman {
+  position: relative;
+  flex: 1;
+  background-color: #eeeeee60;
+  min-height: 230px;
+}
+
+/* Hangman Parts Styles */
+.hangman__hang {
+  position: absolute;
+  top: var(--hangman-container-padding);
+  left: 50%;
+  height: calc(100% - 2 * var(--hangman-container-padding));
+  width: var(--line-width);
+  background-color: #000;
+}
+.hang__stand {
+  position: absolute;
+  bottom: var(--hangman-container-padding);
+  height: var(--line-width);
+  width: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+}
+.hang__top {
+  position: absolute;
+  top: var(--hangman-container-padding);
+  height: var(--line-width);
+  width: var(--rope-offset);
+  left: 50%;
+  background-color: #000;
+}
+.hang__rope {
+  position: absolute;
+  left: calc(var(--rope-offset) + 50%);
+  top: var(--hangman-container-padding);
+  height: var(--rope-height);
+  width: var(--line-width);
+  background-color: #000;
+}
+.hang__rope-node {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  padding: 5px;
+  border: var(--line-width) dashed #000;
+  position: absolute;
+  left: calc(var(--rope-offset) + 50%);
+  top: calc(
+    var(--rope-node-padding) + var(--rope-height) + var(--rope-node-padding) +
+      var(--line-width)
+  );
+  transform: translateX(-50%);
+}
+.rope-node__man-head {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: var(--line-width) solid #000;
+}
+.hangman__back-bone {
+  width: var(--line-width);
+  height: var(--backbone-height);
+  background-color: #000;
+  position: absolute;
+  left: calc(50% + var(--rope-offset));
+  top: calc(
+    var(--rope-node-padding) + var(--rope-height) + var(--rope-node-width)
+  );
+}
+.hangman__left-hand {
+  position: absolute;
+  width: var(--line-width);
+  height: 40px;
+  background-color: #000;
+  top: calc(
+    var(--rope-node-padding) + var(--rope-height) + var(--rope-node-width) +
+      var(--backbone-height) / 3
+  );
+  left: calc(50% + var(--rope-offset));
+  transform-origin: top;
+  transform: rotate(-45deg);
+}
+.hangman__right-hand {
+  position: absolute;
+  width: var(--line-width);
+  height: 40px;
+  background-color: #000;
+  top: calc(
+    var(--rope-node-padding) + var(--rope-height) + var(--rope-node-width) +
+      var(--backbone-height) / 3
+  );
+  left: calc(50% + var(--rope-offset));
+  transform-origin: top;
+  transform: rotate(45deg);
+}
+.hangman__left-feet {
+  position: absolute;
+  width: var(--line-width);
+  height: 40px;
+  background-color: #000;
+  top: calc(
+    var(--rope-node-padding) + var(--rope-height) + var(--rope-node-width) +
+      var(--backbone-height)
+  );
+  left: calc(50% + var(--rope-offset));
+  transform-origin: top;
+  transform: rotate(-45deg);
+}
+.hangman__right-feet {
+  position: absolute;
+  width: var(--line-width);
+  height: 40px;
+  background-color: #000;
+  top: calc(
+    var(--rope-node-padding) + var(--rope-height) + var(--rope-node-width) +
+      var(--backbone-height)
+  );
+  left: calc(50% + var(--rope-offset));
+  transform-origin: top;
+  transform: rotate(45deg);
+}
+/* Hidden Parts */
+.part {
+  display: none;
+}
+
+/* Game Information Styles */
+.main__infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .main__infos > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.main__infos span {
+  color: rgb(243, 35, 70);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Hint Styles */
+.infos__hint span {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.infos__hint:hover span {
+  opacity: 1;
+}
+
+/* Entries Styles */
+.main__entries {
+  background-color: #eeeeee60;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  min-height: 92px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.entries__field {
+  background-color: #fff;
+  height: 60px;
+  flex-basis: 55px;
+  border-bottom: 3px solid #000;
+  display: grid;
+  place-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.entries__field.has-space {
+  position: relative;
+}
+
+.entries__field.has-space::after {
+  position: absolute;
+  content: "space";
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font-size: 14px;
+}
+
+/* Score Styles */
+.hangman__score {
+  display: grid;
+  place-content: center;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(243, 35, 70);
+  top: var(--hangman-container-padding);
+  left: var(--hangman-container-padding);
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+footer h4 {
+  font-weight: normal;
+}
+
+footer span {
+  color: rgb(243, 35, 70);
+}

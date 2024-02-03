@@ -1,0 +1,118 @@
+/* | Start hero Section*/
+.hero {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7.69rem;
+  margin-inline: auto;
+  gap: 7.56rem;
+  width: fit-content;
+}
+.text-container__btn--black {
+  margin-top: 2rem;
+}
+@media screen and (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    gap: 4.5rem;
+    margin-top: 3.19rem;
+  }
+  .hero__img-container img {
+    max-width: 14.5rem;
+  }
+  .text-container__btn--black {
+    margin-top: 1rem;
+    margin-inline: auto;
+  }
+  .hero .text-container {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero {
+    padding-inline: 1.2rem;
+  }
+}
+
+/*End hero Section*/
+
+/* | Start Addresses  */
+.addresses .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.6rem;
+  margin-inline: auto;
+  width: fit-content;
+  padding-inline: 1.2rem;
+}
+.addresses {
+  margin-top: 10.19rem;
+}
+.addresse__img {
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+}
+.addresse__address {
+  font-style: normal;
+}
+
+/* End Addresses  */
+
+/* | Start Savoir Faire  */
+.savoir-faire {
+  margin-bottom: 4rem;
+  width: 86vw;
+  margin-inline: auto;
+  padding-inline: 1.3rem;
+}
+
+/* End Savoir Faire  */
+
+/* | Start Reseaux  */
+.reseaux .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  justify-content: center;
+  gap: 7rem;
+  margin-inline: auto;
+  margin-bottom: 4.5rem;
+  padding-inline: 1.2rem;
+}
+.reseaux .container img {
+  max-width: 100%;
+}
+
+/* End Reseaux  */
+
+/* | Start Media Queiries  */
+@media screen and (min-width: 900px) {
+  /* || Start Addresses  */
+  .addresses .container {
+    gap: 4.5rem;
+  }
+  /* End Addresses  */
+}
+@media screen and (max-width: 786px) {
+  /* || Start Savoir Faire  */
+  .savoir-faire {
+    text-align: center;
+  }
+  /* End Savoir Faire  */
+
+  /* || Start Resaux  */
+  .reseaux .container {
+    gap: 2rem;
+  }
+  /* End Resaux  */
+}
+@media screen and (max-width: 450px) {
+  /* || Start Addresses  */
+  .addresses {
+    margin-top: 4.5rem;
+  }
+  /* End Addresses  */
+}
+/* Start Media Queiries  */

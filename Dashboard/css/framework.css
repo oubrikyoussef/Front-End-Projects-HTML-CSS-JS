@@ -1,0 +1,583 @@
+/*Start Components*/
+.blue-btn {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  font-size: 14px;
+  color: #fff;
+  background-color: var(--blue-color);
+  border-radius: 5px;
+  padding: 0.3em 0.8em;
+  transition: 0.3;
+  margin-block: 1.2rem;
+}
+.blue-btn:hover {
+  background-color: var(--blue-alt-color);
+}
+.box-heading {
+  margin-bottom: 0.7rem;
+  font-size: 22px;
+  font-weight: 700;
+}
+.box-paragraph {
+  color: var(--grey-color);
+  font-size: 15px;
+  margin-bottom: 0.7rem;
+}
+.box-heading-1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+.box-paragraph-1 {
+  color: var(--grey-color);
+  font-size: 13px;
+  margin-bottom: 0.7rem;
+}
+.info-box {
+  font-size: 12px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.box-1-heading {
+  font-size: 15px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+.decoration::after,
+.decoration::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+/* Start Team Profiles  */
+.team-profiles {
+  display: flex;
+}
+.team-profiles img {
+  width: 45px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-left: -8px;
+  position: relative;
+  transition: 0.3s;
+}
+.team-profiles img:hover {
+  z-index: 1;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* End Team Profiles  */
+
+/* Start Progress 2 Style */
+.progress-holder-2 {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+}
+.progress-2 {
+  height: 100%;
+  border-radius: 10px;
+}
+/* Start Progress 2 Style */
+/*Start Toggle Checkbox*/
+:root {
+  --height: 22px;
+  --border-radius: 50px;
+}
+.toggle {
+  position: relative;
+  width: 47px;
+  height: var(--height);
+  border-radius: var(--border-radius);
+  background-color: #ccc;
+  overflow: hidden;
+}
+.toggle::after {
+  font-family: "fontAwesome";
+  content: "\f00d";
+  font-weight: 900;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: calc(var(--height) - 2px);
+  height: calc(var(--height) - 2px);
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+  font-size: 13px;
+  display: grid;
+  place-content: center;
+  color: #ccc;
+}
+.toggle::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue-color);
+  border-radius: var(--border-radius);
+  transition: 0.4s;
+}
+input[type="checkbox"]:checked + .toggle::after {
+  content: "\f00c";
+  left: calc(100% - calc(var(--height) - 2px) - 2px);
+  color: var(--blue-color);
+}
+input[type="checkbox"]:checked + .toggle::before {
+  left: 0;
+}
+label[for^="checkbox"] {
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+/*End Toggle Checkbox*/
+
+/* Start Checkbox  Box*/
+.checkbox-box {
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  position: relative;
+}
+.checkbox-box::before {
+  position: absolute;
+  font-family: "fontAwesome";
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  transform: scale(0) rotate(360deg);
+  background-color: var(--blue-color);
+  content: "\f00c";
+  border-radius: 5px;
+  display: grid;
+  place-content: center;
+  transition: all 0.3s;
+}
+input[type="checkbox"]:checked + .checkbox-box::before {
+  transform: scale(1) rotate(0);
+}
+/* End  Checkbox  Box*/
+
+/* Start Radio Circle  */
+label[for^="radio"] {
+  cursor: pointer;
+}
+input[type="radio"] {
+  display: none;
+}
+.radio-circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  position: relative;
+  transition: 0.3s;
+}
+.radio-circle::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+  transform: scale(0);
+  transition: 0.3s;
+}
+input[type="radio"]:checked + .radio-circle {
+  border-color: var(--blue-color);
+}
+input[type="radio"]:checked + .radio-circle::after {
+  background-color: var(--blue-color);
+  transform: scale(1);
+}
+/* Start Radio Circle  */
+/*End Components*/
+
+/*Start Text Style*/
+.tc {
+  text-align: center;
+}
+.tcc {
+  text-align: center;
+  vertical-align: center;
+}
+.fz-14 {
+  font-size: 14px;
+}
+.fz-18 {
+  font-size: 18px;
+}
+.fz-16 {
+  font-size: 16px;
+}
+.fb {
+  font-weight: bold;
+}
+.fw-normal {
+  font-weight: normal;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.c-w {
+  color: #fff;
+}
+.c-b {
+  color: var(--blue-color);
+}
+.c-o {
+  color: var(--orange-color);
+}
+.c-g {
+  color: var(--green-color);
+}
+.c-r {
+  color: var(--red-color);
+}
+.c-grey {
+  color: var(--grey-color);
+}
+.c-bl {
+  color: #000;
+}
+.tc {
+  text-align: center;
+}
+/*End Text Style*/
+
+/* Start Brands Colors  */
+.c-twitter {
+  color: #1da1f2;
+}
+.c-facebook {
+  color: #1877f2;
+}
+.c-youtube {
+  color: #ff0000;
+}
+.c-linkedin {
+  color: #0a66c2;
+}
+.bg-twitter {
+  background-color: #1da1f2;
+}
+.bg-facebook {
+  background-color: #1877f2;
+}
+.bg-youtube {
+  background-color: #ff0000;
+}
+.bg-linkedin {
+  background-color: #0a66c2;
+}
+.bg-twitter-l {
+  background-color: rgba(29, 161, 242, 0.1);
+}
+.bg-facebook-l {
+  background-color: rgba(24, 119, 242, 0.1);
+}
+.bg-youtube-l {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.bg-linkedin-l {
+  background-color: rgba(10, 102, 194, 0.1);
+}
+/* End Brands Colors  */
+
+/*Start Background Color*/
+.bg-grey {
+  background-color: #eee;
+}
+.bg-bc {
+  background-color: black;
+}
+.bg-w {
+  background-color: white;
+}
+.bg-lb {
+  background-color: rgb(0 117 255 / 20%);
+}
+.bg-lo {
+  background-color: rgb(245 158 11 / 20%);
+}
+.bg-lg {
+  background-color: rgb(34 197 94 / 20%);
+}
+.bg-b {
+  background-color: var(--blue-color);
+}
+.bg-o {
+  background-color: var(--orange-color);
+}
+.bg-g {
+  background-color: var(--green-color);
+}
+.bg-r {
+  background-color: var(--red-color);
+}
+.bg-f6 {
+  background-color: #f6f6f6;
+}
+/*End Background Color*/
+
+/* Start Border Radius  */
+.br-5 {
+  border-radius: 5px;
+}
+.br-10 {
+  border-radius: 10px;
+}
+.br-circle {
+  border-radius: 50%;
+}
+/* End Border Radius  */
+
+/* Start Border Color  */
+.br-c-r {
+  border-color: var(--red-color);
+}
+.br-c-b {
+  border-color: var(--blue-color);
+}
+.br-c-g {
+  border-color: var(--green-color);
+}
+.br-c-o {
+  border-color: var(--orange-color);
+}
+.border-eee {
+  border: 1px solid #eee;
+}
+.border-2-eee {
+  border: 2px solid #eee;
+}
+.border-ccc {
+  border: 1px solid #ccc;
+}
+.border-eee-tp {
+  border-top: 1px solid #eee;
+}
+.border-eee-bt {
+  border-bottom: 1px solid #eee;
+}
+.border-block-eee {
+  border-block: 1px solid #eee;
+}
+/* End Border Color  */
+
+/* Start Transitions  */
+.main-tr {
+  transition: 0.3s;
+}
+/* End Transitions  */
+
+/* Start Margins  */
+.mb-8 {
+  margin-bottom: 0.8rem;
+}
+.mbl-5 {
+  margin-block: 0.5rem;
+}
+.mb-4 {
+  margin-bottom: 0.4rem;
+}
+.mgt-1-5 {
+  margin-top: 1.5rem;
+}
+.m-1 {
+  margin: 1rem;
+}
+.mbt-1 {
+  margin-bottom: 1rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mi-1 {
+  margin-inline: 1rem;
+}
+.mb-1 {
+  margin-block: 1rem;
+}
+.mbt-1 {
+  margin-bottom: 1rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+.m-0 {
+  margin: 0;
+}
+.m-5 {
+  margin: 0.5rem;
+}
+.mb-5 {
+  margin-block: 0.5rem;
+}
+.mt-5 {
+  margin-top: 0.5rem;
+}
+.ml-5 {
+  margin-left: 0.5rem;
+}
+.mr-5 {
+  margin-right: 0.5rem;
+}
+.mi-5 {
+  margin-inline: 0.5rem;
+}
+.mbt-5 {
+  margin-bottom: 0.5rem;
+}
+.m-auto {
+  margin-inline: auto;
+}
+/* End Margins  */
+
+/* Start Paddings  */
+.pd-6 {
+  padding: 0.6rem;
+}
+.pd-8 {
+  padding: 0.8rem;
+}
+.pd-block-8 {
+  padding-block: 0.8rem;
+}
+.pd-t-8 {
+  padding-top: 0.8rem;
+}
+.pd-bt-8 {
+  padding-bottom: 0.8rem;
+}
+.pd-t-4 {
+  padding-top: 0.4rem;
+}
+.pd-b-3 {
+  padding-block: 1.3rem;
+}
+.pd-t-3 {
+  padding-top: 1.3rem;
+}
+.pd-bt-3 {
+  padding-bottom: 1.3rem;
+}
+.pd-1 {
+  padding: 1rem;
+}
+.pd-inline-1 {
+  padding-inline: 1rem;
+}
+.pd-left-13 {
+  padding-left: 13px;
+}
+.pd-5 {
+  padding: 0.5rem;
+}
+/* End Paddings  */
+
+/* Start Width  */
+.w-fit {
+  width: fit-content;
+}
+.w-full {
+  width: 100%;
+}
+/* End Width  */
+/* Start Display  */
+@media screen and (max-width: 768px) {
+  .d-none {
+    display: none;
+  }
+}
+.db {
+  display: block;
+}
+/* End Display  */
+
+/* Start Flexbox  */
+.wrap {
+  flex-wrap: wrap;
+}
+.flx-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flx-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flx-ic {
+  display: flex;
+  align-items: center;
+}
+.gap-13 {
+  gap: 13px;
+}
+.gap-8 {
+  gap: 8px;
+}
+
+.flex-1 {
+  flex-grow: 1;
+}
+
+.flx-column-bt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* End Flexbox  */
+
+/* Start Overflow  */
+.over-hidden {
+  overflow: hidden;
+}
+/* Start Overflow  */
+
+/* Start Position  */
+.ps-relative {
+  position: relative;
+}
+/* End Position  */
+
+/* Start Pseudo Elements  */
+.bf-af::before,
+.bf-af::after {
+  position: absolute;
+  content: "";
+}
+/* End Pseudo Elements  */
+
+/* Start Stats  */
+.pending {
+  background-color: var(--orange-color);
+}
+.completed {
+  background-color: var(--green-color);
+}
+.in-progress {
+  background-color: var(--blue-color);
+}
+.rejected {
+  background-color: var(--red-color);
+}
+/* End Stats  */

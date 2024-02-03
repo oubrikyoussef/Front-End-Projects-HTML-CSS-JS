@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/paragraphs.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="TypeRacer Game - Test Your Typing Speed"
+    />
+    <meta
+      name="keywords"
+      content="typing, speed, game, TypeRacer, fun, challenge"
+    />
+    <meta name="author" content="Youssef Oubrik" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Protocol (OGP) Tags -->
+    <meta property="og:title" content="TypeRacer Game" />
+    <meta
+      property="og:description"
+      content="Test your typing speed with TypeRacer, a fun and challenging game. How fast can you type?"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Man Typing icon by Icons8-->
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+
+    <title>TypeRacer Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="play">Play</div>
+      <p class="container__paragraph"></p>
+      <div class="wrapper">
+        <div class="time-left">
+          <p>Time Left :</p>
+          <span></span>
+        </div>
+        <div class="mistakes">
+          <p>Mistakes :</p>
+          <span></span>
+        </div>
+        <div class="score">
+          <p>Score :</p>
+          <span></span>
+        </div>
+      </div>
+      <button class="replay">Get New Text</button>
+    </div>
+    <div class="dialog">
+      <h3>Result</h3>
+      <p class="dialog__paragraph">
+        Congratulations! You've typed <span class="correct"></span> characters
+        correctly out of a total of <span class="total"></span> in just
+        <span class="time"></span> seconds.
+        <button class="replay">Play Again</button>
+      </p>
+    </div>
+  </body>
+</html>

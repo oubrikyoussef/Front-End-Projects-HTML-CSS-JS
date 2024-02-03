@@ -1,0 +1,162 @@
+/* Import the Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Reset default styles and set font-family */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global styles for the entire page */
+body {
+  min-height: 100vh;
+  background-color: #17a2b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+/* Container styles */
+.container {
+  position: relative;
+}
+
+/* Play button styles */
+.play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #56964f;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  color: #fff;
+  border: 2px dashed #17a2b8;
+  transform: translateX(-120%);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Responsive adjustment for the Play button */
+@media screen and (max-width: 550px) {
+  .play {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: unset;
+    transform: translate(-50%, -100%);
+  }
+}
+
+/* Play button hover effect */
+.play:hover {
+  background-color: #5ea456;
+}
+
+/* Container and dialog shared styles */
+.container,
+.dialog {
+  width: min(100%, 350px);
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+/* Paragraph container styles */
+.container__paragraph {
+  padding: 0.5rem;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Wrapper styles */
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.6rem;
+  font-size: 14px;
+}
+
+/* Styles for elements within the wrapper */
+.wrapper > div {
+  display: flex;
+  gap: 5px;
+}
+
+.wrapper > div p {
+  font-weight: 500;
+  color: #057d8f;
+}
+
+/* Button styles */
+.container button {
+  display: none;
+}
+
+button {
+  font-size: 14px;
+  padding: 0.4rem;
+  outline: none;
+  border: none;
+  background-color: #17a2b8;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: rgba(23, 162, 184, 0.8);
+}
+
+/* Correct character styles */
+.container__paragraph .correct {
+  color: #56964f;
+  background-color: #a3ff99e2;
+}
+
+/* Wrong character styles */
+.container__paragraph .wrong {
+  background: #ffc0cb;
+  color: #cb3439;
+}
+
+/* Responsive adjustments for small screens */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 3px;
+    align-items: start;
+  }
+}
+
+/* Dialog styles */
+.dialog {
+  text-align: center;
+  display: none;
+}
+
+/* Header styles within the dialog */
+.dialog h3 {
+  color: #057d8f;
+  margin-bottom: 0.3rem;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Paragraph styles within the dialog */
+.dialog__paragraph {
+  font-size: 15px;
+  line-height: 1.5;
+}

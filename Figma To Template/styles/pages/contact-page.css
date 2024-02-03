@@ -1,0 +1,48 @@
+/* | Start Nos Addresses  */
+.nos-addresses {
+  max-width: 72rem;
+  margin-inline: auto;
+}
+.nos-addresses__heading {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 2.5rem;
+}
+.nos-addresses .container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding-inline: 1.2rem;
+}
+.address .location {
+  font-style: normal;
+}
+/* Start Nos Addresses  */
+
+/* Start Contact  */
+.contact-page__contact {
+  margin-top: 5.5rem;
+}
+/* End Contact  */
+
+/* Start Footer  */
+.contact-page__footer {
+  margin-top: 3.94rem;
+}
+.address__phone-number {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+/* End Footer  */
+
+/* | Start Media Quieries  */
+@media screen and (min-width: 970px) {
+  /* || Start Contact  */
+  .contact-page__contact {
+    margin-top: 10.5rem;
+  }
+  /* End Contact  */
+}
+/* End Media Quieries  */

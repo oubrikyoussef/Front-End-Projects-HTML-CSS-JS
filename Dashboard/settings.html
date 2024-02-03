@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Normalize Stylesheet-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Framework Stylesheet-->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome  Icons-->
+    <script
+      src="https://kit.fontawesome.com/c2e7a7f3d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EQG8J1X6ZD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EQG8J1X6ZD');
+</script>
+    <title>Settings</title>
+  </head>
+  <body id="settings">
+    <aside class="bg-w ps-relative">
+      <h3 class="tc decoration mgt-1-5 ps-relative pd-bt-8">Youssef</h3>
+      <ul>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="index.html"
+          >
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span class="page-title d-none">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 active flx-ic gap-8"
+            href="settings.html"
+          >
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span class="page-title d-none ml-5">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="profile.html"
+          >
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span class="page-title d-none ml-5">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="projects"
+          >
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span class="page-title d-none ml-5">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="courses.html"
+          >
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span class="page-title d-none ml-5">Courses</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="friends.html"
+          >
+            <i class="fa-regular fa-circle-user fa-fw"></i>
+            <span class="page-title d-none ml-5">Friends</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="files.html"
+          >
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span class="page-title d-none ml-5">Files</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="page br-5 main-tr fz-14 pd-6 mb-4 flx-ic gap-8"
+            href="plans.html"
+          >
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span class="page-title d-none ml-5">Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main class="flex-1">
+      <!-- Start Head  -->
+      <div class="head flx-sb-c bg-w ps-relative pd-1">
+        <input
+          type="text"
+          name="keywords"
+          id="keywords"
+          placeholder="Type A keyword"
+          class="br-5 place-holder border-ccc ps-relative pd-5"
+        />
+        <div class="left-col w-fit flx-sb-c">
+          <a class="bell bf-af ps-relative" href="#"
+            ><i class="fa-regular fa-bell fa-lg"></i
+          ></a>
+          <a href="#"
+            ><img src="images/avatar.png" alt="User image" class="ml-1"
+          /></a>
+        </div>
+      </div>
+      <!-- End Head  -->
+
+      <!--Start Settings Main Content-->
+      <div class="pd-inline-1">
+        <h1 class="main-heading w-fit bf-af ps-relative pd-bt-8">Settings</h1>
+        <div class="container pd-bt-3">
+          <!-- Start Control  -->
+          <div class="control br-10 bg-w pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Site Control</h3>
+            <p class="box-paragraph">
+              Control The Website If There Is Maintenance
+            </p>
+            <div class="flx-sb-c">
+              <div class="text-container">
+                <div class="box-heading-1">Website Control</div>
+                <p class="box-paragraph-1">
+                  Open/Close Website And Type The Reason
+                </p>
+              </div>
+              <label for="checkbox">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  name="website-control"
+                  checked
+                />
+                <div class="toggle"></div>
+              </label>
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Close Message Content"
+              class="border-ccc br-5 pd-5 place-holder w-full"
+            ></textarea>
+          </div>
+          <!-- End Welcome  -->
+
+          <!-- Start General Info  -->
+          <div class="general-info br-10 bg-w pd-b-3 pd-inline-1">
+            <h3 class="box-heading">General Info</h3>
+            <p class="box-paragraph">General Information About Your Account</p>
+            <form action="">
+              <label for="first-name" class="box-paragraph-1"
+                >Your Fisrt Name</label
+              >
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                class="br-5 place-holder pd-5 mb-5 db border-eee w-full"
+                placeholder="Youssef"
+                disabled
+              />
+              <label for="last-name" class="box-paragraph-1"
+                >Your Last Name</label
+              >
+
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                class="br-5 place-holder pd-5 mb-5 db border-eee w-full"
+                placeholder="Oubrik"
+                disabled
+              />
+              <label for="email" class="box-paragraph-1">Your Email</label>
+
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="br-5 place-holder pd-5 mb-5 db border-eee w-full"
+                placeholder="youssefoubrik.edu@gmail.com"
+                disabled
+              />
+            </form>
+            <a href="#" class="blue-btn">change</a>
+          </div>
+          <!-- End General Info  -->
+
+          <!-- Start Security Info  -->
+          <div class="security-info br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Security Info</h3>
+            <p class="box-paragraph">Security Information About Your Account</p>
+            <div class="row pd-bt-8 flx-sb-c border-eee-bt">
+              <div class="text-container">
+                <div class="box-heading-1">Password</div>
+                <p class="box-paragraph-1">
+                  Security Information About Your Account
+                </p>
+              </div>
+              <a href="#" class="blue-btn">change</a>
+            </div>
+            <div class="row pd-block-8 flx-sb-c border-eee-bt">
+              <div class="text-container">
+                <div class="box-heading-1">Two-Factor Authentication</div>
+                <p class="box-paragraph-1">Enable/Disable The Feature</p>
+              </div>
+              <label for="checkbox-1">
+                <input
+                  type="checkbox"
+                  id="checkbox-1"
+                  name="website-control"
+                  checked
+                />
+                <div class="toggle"></div>
+              </label>
+            </div>
+            <div class="row pd-t-8 flx-sb-c">
+              <div class="text-container">
+                <div class="box-heading-1">Devices</div>
+                <p class="box-paragraph-1">Check The Login Devices List</p>
+              </div>
+              <a href="#" class="blue-btn bg-grey c-bl devices">Devices</a>
+            </div>
+          </div>
+          <!-- Start Security Info  -->
+
+          <!-- Start Social Info  -->
+          <div class="social-info br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Social Info</h3>
+            <p class="box-paragraph">Social Media Informations</p>
+            <div class="box flx-ic mbt-1 mgt-1-5">
+              <i
+                class="fa-brands fa-twitter flx-c-c c-grey pd-5 bg-f6 border-ccc"
+              ></i>
+              <input
+                class="box border-ccc place-holder w-full db pd-5 pd-left-13"
+                placeholder="@youssefoubrik"
+                type="text"
+                disabled
+              />
+            </div>
+            <div class="box flx-ic mbt-1 mgt-1-5">
+              <i
+                class="fa-brands fa-facebook flx-c-c c-grey pd-5 bg-f6 border-ccc"
+              ></i>
+              <input
+                class="box border-ccc place-holder w-full db pd-5 pd-left-13"
+                placeholder="@youssefoubrik"
+                type="text"
+                disabled
+              />
+            </div>
+            <div class="box flx-ic mbt-1 mgt-1-5">
+              <i
+                class="fa-brands fa-instagram flx-c-c c-grey pd-5 bg-f6 border-ccc"
+              ></i>
+              <input
+                class="box border-ccc place-holder w-full db pd-5 pd-left-13"
+                placeholder="@youssefoubrik"
+                type="text"
+                disabled
+              />
+            </div>
+            <div class="box flx-ic mbt-1 mgt-1-5">
+              <i
+                class="fa-brands fa-linkedin flx-c-c c-grey pd-5 bg-f6 border-ccc"
+              ></i>
+              <input
+                class="box border-ccc place-holder w-full db pd-5 pd-left-13"
+                placeholder="@youssefoubrik"
+                type="text"
+                disabled
+              />
+            </div>
+
+            <a class="blue-btn" href="#">change</a>
+          </div>
+          <!-- End Social Info  -->
+
+          <!-- Start Widgets Control  -->
+          <div
+            class="widgets-control br-10 bg-w over-hidden pd-b-3 pd-inline-1"
+          >
+            <h3 class="box-heading">Widgets Control</h3>
+            <p class="box-paragraph">Show/Hide Widgets</p>
+            <label
+              for="checkbox-2"
+              class="flx-ic gap-13 mbt-1 checkbox-box-input"
+            >
+              <input type="checkbox" name="checkbox-2" id="checkbox-2" />
+              <div class="checkbox-box br-5 bg-grey"></div>
+              <div class="box-heading-1 m-0">Quick Draft</div>
+            </label>
+            <label
+              for="checkbox-3"
+              class="flx-ic gap-13 mbt-1 checkbox-box-input"
+            >
+              <input type="checkbox" name="checkbox-3" id="checkbox-3" />
+              <div class="checkbox-box br-5 bg-grey"></div>
+              <div class="box-heading-1 m-0">Yearly Targets</div>
+            </label>
+            <label
+              for="checkbox-4"
+              class="flx-ic gap-13 mbt-1 checkbox-box-input"
+            >
+              <input type="checkbox" name="checkbox-4" id="checkbox-4" />
+              <div class="checkbox-box br-5 bg-grey"></div>
+              <div class="box-heading-1 m-0">Tickets Statistics</div>
+            </label>
+            <label
+              for="checkbox-5"
+              class="flx-ic gap-13 mbt-1 checkbox-box-input"
+            >
+              <input type="checkbox" name="checkbox-5" id="checkbox-5" />
+              <div class="checkbox-box br-5 bg-grey"></div>
+              <div class="box-heading-1 m-0">Latest News</div>
+            </label>
+            <label
+              for="checkbox-6"
+              class="flx-ic gap-13 mbt-1 checkbox-box-input"
+            >
+              <input type="checkbox" name="checkbox-6" id="checkbox-6" />
+              <div class="checkbox-box br-5 bg-grey"></div>
+              <div class="box-heading-1 m-0">Latest Tasks</div>
+            </label>
+            <label
+              for="checkbox-7"
+              class="flx-ic gap-13 mbt-1 checkbox-box-input"
+            >
+              <input type="checkbox" name="checkbox-7" id="checkbox-7" />
+              <div class="checkbox-box br-5 bg-grey"></div>
+              <div class="box-heading-1 m-0">Top Search Items</div>
+            </label>
+            <button class="blue-btn">Apply</button>
+          </div>
+          <!-- End Widgets Control  -->
+
+          <!-- Start Latest tasks  -->
+
+          <div class="backup br-10 bg-w over-hidden pd-b-3 pd-inline-1">
+            <h3 class="box-heading">Backup Manager</h3>
+            <p class="box-paragraph">Control Backup Time And Location</p>
+
+            <label for="radio-1" class="flx-ic gap-13 mbt-5">
+              <input type="radio" name="radio" id="radio-1" />
+              <div class="radio-circle br-circle"></div>
+              <div class="box-heading-1">Daily</div>
+            </label>
+            <label for="radio-2" class="flx-ic gap-13 mbt-5">
+              <input type="radio" name="radio" id="radio-2" />
+              <div class="radio-circle br-circle"></div>
+
+              <div class="box-heading-1">Weekly</div>
+            </label>
+            <label for="radio-3" class="flx-ic gap-13 mbt-5">
+              <input type="radio" name="radio" id="radio-3" />
+              <div class="radio-circle br-circle"></div>
+              <div class="box-heading-1">Monthly</div>
+            </label>
+            <div class="servers pd-t-3 flx-sb-c border-eee-tp fz-18">
+              <input type="radio" name="radio-1" id="radio-4" class="server" />
+              <label for="radio-4" class="br-10 border-2-eee pd-1 tc">
+                <i class="fa-solid fa-server d-block mb-10"></i>
+                <div class="box-heading-1">Youssef</div>
+              </label>
+              <input type="radio" name="radio-1" id="radio-5" class="server" />
+              <label for="radio-5" class="br-10 border-2-eee pd-1 tc main-tr">
+                <i class="fa-solid fa-server d-block mb-10"></i>
+                <div class="box-heading-1">Ali</div>
+              </label>
+              <input type="radio" name="radio-1" id="radio-6" class="server" />
+              <label for="radio-6" class="br-10 border-2-eee pd-1 tc main-tr">
+                <i class="fa-solid fa-server d-block mb-10"></i>
+                <div class="box-heading-1">Samir</div>
+              </label>
+            </div>
+            <a href="#" class="blue-btn">Save</a>
+          </div>
+          <!-- End Latest tasks  -->
+        </div>
+      </div>
+      <!--End Dashboard Main Content-->
+    </main>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+/*| Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap");
+
+/*| Modules*/
+
+/*|| Header*/
+
+@import url("modules/header.css");
+
+/*||redBanner*/
+
+@import url("modules/redBanner.css");
+
+/*||Contact*/
+
+@import url("modules/contact.css");
+
+/*||blackBtn*/
+
+@import url("modules/blackBtn.css");
+
+/*||Footer*/
+
+@import url("modules/footer.css");
+
+/*|Pages*/
+
+/*||Home page*/
+
+@import url("pages/home.css");
+
+/*||Menu page*/
+
+@import url("pages/menu.css");
+
+/*||Contact page*/
+
+@import url("pages/contact-page.css");
+/*| Start Global Rules*/
+
+/*|| Reset*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*|| Colors*/
+
+  --black: #000000;
+  --light-grey: #f3f3f3;
+  --red-highlight: #d2483d;
+  --white: #ffffff;
+
+  /*|| Fonts/
+
+  /*||| Body*/
+  --body-font-size: 1.25rem;
+  --body-font-weight: 400;
+  --body-font: "Montserrat";
+  --body-line-height: 1.5rem;
+
+  /*||| Main Header */
+  --header-font-size: 4.5rem;
+  --header-font-weight: 400;
+  --header-font: "Bebas Neue";
+  --header-line-height: 5.375rem;
+
+  /*||| Title*/
+  --title-font-size: 1.5rem;
+  --title-font-weight: 400;
+  --title-font: "Bebas Neue";
+  --title-line-height: 1.75rem;
+
+  /*||| Body highlight */
+  --highlight-font-size: 1.25rem;
+  --highlight-font: "Montserrat";
+  --highlight-line-height: 1.5rem;
+  --hightlight-font-weight: 600;
+}
+@media (max-width: 768px) {
+  :root {
+    /*|| Mobile Fonts*/
+    --body-font-size: 1rem;
+    --body-highlight-font-size: 1rem;
+    --header-font-size: 2.5rem;
+    --title-font-size: 1.25rem;
+
+    --body-line-height: 1.25rem;
+    --body-highlight-line-height: 1.25rem;
+    --header-line-height: 3rem;
+    --title-line-height: 1.5rem;
+  }
+}
+/*End Global Rules*/
+
+/* | Start Body Style  */
+body {
+  background: var(--light-grey, #f3f3f3);
+  color: var(--black, #000);
+  font-family: var(--body-font, "Montserrat");
+  font-size: var(--body-font-size, 1.25rem);
+  font-weight: var(--body-font-weight, 400);
+  line-height: var(--body-line-height, 1.5rem);
+}
+/* End Body Style  */
+
+/* | Start Main Header Style  */
+h1 {
+  color: var(--black, #000);
+  font-family: var(--header-font, "Bebas Neue");
+  font-size: var(--header-font-size, 4.5rem);
+  font-weight: var(--hight-font-weight, 400);
+  line-height: var(--header-line-height, 5.375rem);
+}
+/* End Main Header Style  */
+
+/* | Start Title Style  */
+h2,
+.title {
+  color: var(--black, #000);
+  font-family: var(--title-font, "Bebas Neue");
+  font-size: var(--title-font-size, 1.5rem);
+  font-weight: var(--title-font-weight, 400);
+  line-height: var(--title-line-height, 1.75rem);
+  text-decoration-color: var(--red-highlight, #d2483d);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0.1875rem;
+  text-underline-offset: 0.25rem;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+/* End Title Style  */
+
+/* | Start Highlight Style  */
+.highlight {
+  color: var(--black, #000);
+  font-size: var(--highlight-font-size, 1.25rem);
+  font-family: var(--highlight-font, "Montserrat");
+  line-height: var(--highlight-line-height, 1.5rem);
+  font-weight: var(--hightlight-font-weight, 400);
+}
+/* End Highlight Style  */
+
+/* | Start Light Red Font Style*/
+.light-red {
+  color: var(--red-highlight, #d2483d);
+}
+/* End Light Red  Font Style*/

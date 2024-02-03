@@ -1,0 +1,25 @@
+.footer {
+  margin-top: 9.87rem;
+  padding-block: 5.5rem;
+  padding-right: 4.5rem;
+  background-color: var(--black, #000);
+}
+.footer_icons {
+  width: fit-content;
+  margin-left: auto;
+  display: flex;
+  gap: 3.5rem;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-inline: unset;
+    padding-block: 4.5rem;
+    margin-top: 4.5rem;
+  }
+  .footer_icons {
+    margin-inline: auto;
+  }
+  .footer_icons {
+    gap: 2.5rem;
+  }
+}

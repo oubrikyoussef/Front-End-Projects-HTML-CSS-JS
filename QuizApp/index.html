@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Challenge your knowledge with the Quizz App Test your wits, answer questions, and compete for the highest score"
+    />
+    <meta name="keywords" content="quiz, questions, answers, game" />
+    <meta name="author" content="Oubrik Youssef" />
+
+    <!-- OGP Tags -->
+    <meta property="og:title" content="Quizz App" />
+    <meta
+      property="og:description"
+      content="Challenge your knowledge with the Quizz App Test your wits, answer questions, and compete for the highest score"
+    />
+    <meta property="og:type" content="website" />
+
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon From icons8.com  -->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <title>Quizz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <p class="category">
+          <span>Category</span> : <span class="value"></span>
+        </p>
+        <p class="score-holder">
+          <span>Score</span> : <span class="value"></span>
+        </p>
+      </div>
+      <form action="#"></form>
+      <div class="foot">
+        <ul class="questions-number"></ul>
+        <p class="timer"></p>
+      </div>
+    </div>
+    <form action="#" class="decision">
+      <p>
+        You've answered correctly <span class="correct"></span> questions out of
+        <span class="total"></span>
+      </p>
+      <p>Do You Want To Replay ?</p>
+      <div class="buttons">
+        <input type="submit" value="Yes" class="yes" />
+        <input type="reset" value="No" class="no" />
+      </div>
+    </form>
+  </body>
+  <audio src="sounds/correct.wav" class="correct"></audio>
+  <audio src="sounds/success.wav" class="success"></audio>
+  <audio src="sounds/wrong.mp3" class="wrong"></audio>
+  <audio src="sounds/lose.mp3" class="lose"></audio>
+</html>

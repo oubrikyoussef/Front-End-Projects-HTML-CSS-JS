@@ -1,0 +1,895 @@
+@import url(global-rules.css);
+/* Start Section Style  */
+body {
+  display: flex;
+}
+/* End Section Style  */
+
+/* Start Main Style  */
+main {
+  background-color: #f1f5f9;
+}
+/* End Main Style  */
+
+/* Start Aside Style  */
+aside {
+  box-shadow: 0 0 10px #ddd;
+}
+
+@media screen and (min-width: 768px) {
+  aside {
+    padding: 0.8rem;
+  }
+  aside h3::before {
+    width: 50%;
+    height: 1px;
+    background-color: #000;
+    transform: translateX(-50%);
+  }
+  aside h3::after {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 5px solid #fff;
+    transform: translate(-50%, 50%);
+  }
+}
+aside ul a {
+  display: block;
+}
+aside a.active,
+aside a:hover {
+  background-color: #f6f6f6;
+}
+aside ul {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 768px) {
+  aside {
+    flex-basis: auto;
+    padding: 0.4rem;
+  }
+  aside h3 {
+    font-size: 14px;
+  }
+  aside h3::after,
+  aside h3::before {
+    display: none;
+  }
+  aside a {
+    width: fit-content;
+    margin-inline: auto;
+  }
+  aside ul {
+    margin-top: 0;
+  }
+}
+/* End Aside Style  */
+
+/* Start Head Style  */
+
+main .head a img {
+  width: 30px;
+}
+main .head .bell::before {
+  top: -9px;
+  left: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--red-color);
+}
+main .head input {
+  padding-left: 1.3rem;
+  width: 140px;
+}
+main .head ul {
+  margin-top: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  main .head ul {
+    margin-top: 1.2rem;
+  }
+}
+/* End Head Style  */
+
+/* Start Dashboard Style  */
+
+/*Main Heading*/
+
+main #dashboard .main-heading {
+  letter-spacing: -1px;
+}
+main .main-heading::before,
+main .main-heading::after {
+  bottom: 0;
+  left: 0;
+  height: 3px;
+}
+main .main-heading::after {
+  background-color: #000;
+  width: 30%;
+}
+main .main-heading::before {
+  width: 80%;
+  background-color: white;
+}
+/*Start Main Content*/
+
+/* Start Welcome  */
+
+#dashboard .welcome .background p {
+  margin-bottom: 1.4rem;
+}
+
+#dashboard .welcome .background img.avatar {
+  position: absolute;
+  width: 68px;
+  bottom: 0;
+  transform: translateY(50%);
+  z-index: 5;
+  padding: 2px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px #ddd;
+}
+@media screen and (max-width: 768px) {
+  #dashboard .welcome .background img.avatar {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 0;
+  }
+}
+#dashboard .welcome .background img.welcome {
+  width: 180px;
+}
+#dashboard .welcome .infos {
+  display: flex;
+  margin-top: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  #dashboard .welcome .infos {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
+/* End Welcome  */
+
+/* Start Quick Draft  */
+#dashboard .draft textarea,
+#dashboard .draft input {
+  border: none;
+}
+#dashboard .draft textarea {
+  resize: none;
+  height: 150px;
+}
+
+/* End Quick Draft  */
+
+/* Start Targets */
+#dashboard .targets .icon {
+  width: 65px;
+  height: 65px;
+}
+@media screen and (max-width: 600px) {
+  #dashboard .targets .icon {
+    width: 55px;
+    height: 55px;
+  }
+}
+#dashboard .targets .row {
+  gap: 0.8rem;
+}
+#dashboard .targets .progress-holder {
+  height: 4px;
+}
+#dashboard .targets .progress {
+  height: 100%;
+}
+
+#dashboard .targets span {
+  height: 1.2rem;
+  width: 2rem;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(50%, calc(-100% - 8px));
+  right: 0;
+}
+
+#dashboard .targets span::before {
+  border: 5px solid transparent;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+#dashboard .targets .row:first-of-type span::before {
+  border-top-color: var(--blue-color);
+}
+#dashboard .targets .row:nth-of-type(2) span::before {
+  border-top-color: var(--orange-color);
+}
+#dashboard .targets .row:nth-of-type(3) span::before {
+  border-top-color: var(--green-color);
+}
+
+@media screen and (max-width: 500px) {
+  #dashboard .targets span {
+    top: unset;
+    transform: unset;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, calc(100% + 8px));
+  }
+  #dashboard .targets span::before {
+    bottom: unset;
+    left: unset;
+    transform: unset;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  #dashboard .targets .row:first-of-type span::before {
+    border-top-color: transparent;
+    border-bottom-color: var(--blue-color);
+  }
+  #dashboard .targets .row:nth-of-type(2) span::before {
+    border-top-color: transparent;
+    border-bottom-color: var(--orange-color);
+  }
+  #dashboard .targets .row:nth-of-type(3) span::before {
+    border-top-color: transparent;
+    border-bottom-color: var(--green-color);
+  }
+}
+/* End Targets */
+
+/* Start Tickets Statistics  */
+#dashboard .statistics .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#dashboard .statistics .box {
+  flex-basis: calc(50% - 10px);
+}
+@media screen and (max-width: 768px) {
+  #dashboard .statistics .box {
+    flex-basis: 100%;
+  }
+}
+#dashboard .statistics i {
+  font-size: 22px;
+}
+#dashboard .statistics .box > div {
+  font-size: 23px;
+}
+#dashboard .statistics .box p {
+  font-size: 13px;
+}
+/* End Tickets Statistics  */
+
+/* Start News  */
+
+#dashboard .news img {
+  width: 88px;
+}
+#dashboard .news .left-col {
+  gap: 13px;
+}
+#dashboard .news .blue-btn {
+  margin-bottom: 0rem;
+}
+@media screen and (max-width: 768px) {
+  #dashboard .news .left-col,
+  #dashboard .news .box {
+    flex-direction: column;
+    gap: 13px;
+    text-align: center;
+  }
+}
+/* End News  */
+
+/*Start Tasks*/
+#dashboard .tasks i {
+  font-size: 15px;
+}
+#dashboard .tasks .icons {
+  gap: 12px;
+}
+#dashboard .tasks .delete:hover {
+  color: red;
+  cursor: pointer;
+}
+#dashboard .tasks .done:hover {
+  color: green;
+  cursor: pointer;
+}
+#dashboard .tasks .blue-btn {
+  margin-bottom: 0;
+}
+#dashboard .tasks .done-task {
+  opacity: 0.6;
+}
+#dashboard .tasks .done-task h4,
+#dashboard .tasks .done-task p {
+  text-decoration: line-through;
+}
+/*End Tasks*/
+
+/* Start Uploads  */
+#dashboard .uploads img {
+  width: 35px;
+}
+#dashboard .uploads .left-col {
+  gap: 13px;
+}
+#dashboard .uploads .blue-btn {
+  margin-bottom: 0rem;
+}
+/* End Uploads  */
+
+/* Start Project Progress  */
+#dashboard .project-progress .circle {
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--blue-color);
+}
+#dashboard .project-progress .inside-circle {
+  width: 16px;
+  height: 16px;
+}
+@keyframes active {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#dashboard .project-progress .inside-circle.active {
+  animation: active 0.8s infinite alternate linear;
+}
+#dashboard .project-progress .line {
+  position: absolute;
+  width: 2px;
+  height: 1.6rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 1px));
+  z-index: 5;
+}
+#dashboard .project-progress img {
+  width: 130px;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 490px) {
+  #dashboard .project-progress img {
+    display: none;
+  }
+}
+/* End Project Progress  */
+
+/* Start Reminders  */
+#dashboard .reminders .circle {
+  width: 11px;
+  height: 11px;
+}
+#dashboard .reminders .text-container {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+/* End Reminders  */
+
+/* Start Latest Post  */
+#dashboard .latest-post img {
+  width: 45px;
+}
+#dashboard .latest-post i.comments:hover {
+  color: blue;
+  cursor: pointer;
+}
+#dashboard .latest-post i.likes:hover {
+  color: red;
+  cursor: pointer;
+}
+/* End Latest Post  */
+
+/* Start Social Stats  */
+#dashboard .social-stats .box {
+  margin-bottom: 0.8rem;
+  height: 50px;
+}
+#dashboard .social-stats .icon {
+  width: 50px;
+  height: 100%;
+}
+#dashboard .social-stats .right-col {
+  height: 100%;
+}
+/* End Social Stats  */
+
+/* Start Projects  */
+#dashboard .projects {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+#dashboard .projects table {
+  border-collapse: collapse;
+}
+
+#dashboard .projects table th {
+  text-align: start;
+  font-size: 15px;
+  padding: 0.7rem;
+  font-weight: 600;
+  border: 1px solid #eee;
+}
+
+#dashboard .projects table td {
+  padding: 0.9rem;
+  border: 1px solid #eee;
+}
+#dashboard .projects table tr:hover {
+  background-color: #eeeeee5b;
+}
+#dashboard .images {
+  display: flex;
+  justify-content: center;
+}
+#dashboard .team img {
+  width: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  #dashboard .projects table th {
+    font-size: 17px;
+    display: none;
+  }
+  #dashboard .projects table td {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+  }
+  #dashboard .projects table td::before {
+    content: attr(media-title);
+    font-weight: bold;
+  }
+  #dashboard .projects table tr:hover {
+    background-color: initial;
+  }
+  #dashboard .projects table tr:nth-of-type(2n) {
+    background-color: #cccccc21;
+  }
+  #dashboard .projects table img {
+    width: 45px;
+  }
+}
+
+/* End Projects  */
+/*End Main Content*/
+
+/* End Dashboard Style  */
+
+/*Start Settings Style*/
+
+/* Start Site Control  */
+#settings .control textarea {
+  height: 150px;
+  resize: none;
+  margin-top: 0.6rem;
+}
+/* End Site Control  */
+
+/* Start Security Info  */
+#settings .security-info a.devices:hover {
+  background-color: #eee;
+}
+/* End Security Info  */
+
+/* Start Social Info  */
+#settings .social-info input {
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+#settings .social-info i {
+  border-radius: 5px 0 0 5px;
+  transition: 0.3s;
+}
+#settings .social-info .box:focus-within i {
+  color: #000;
+}
+/* End Social Info  */
+
+/* Start Backup Manager  */
+#settings .backup .servers label {
+  flex-basis: calc(100% / 3 - 5px);
+}
+@media screen and (max-width: 768px) {
+  #settings .backup .servers {
+    flex-direction: column;
+    gap: 8px;
+  }
+  #settings .backup .servers label {
+    width: 100%;
+  }
+}
+#settings .backup input.server:checked + label {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
+
+/* End Backup Manager  */
+/*End Settings Style*/
+
+/* Start Profile Style  */
+
+/* Start User Informations  */
+#profile .user-informations {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+#profile .user-informations .informations > div {
+  padding-left: 1.2rem;
+  transform: 0.3s;
+  padding-block: 1.5rem;
+}
+
+#profile .user-informations .informations > div:hover {
+  background-color: #eeeeee5b;
+}
+@media screen and (max-width: 1099px) {
+  #profile .user-informations {
+    display: block;
+  }
+  #profile .user-informations .overview {
+    border-right: unset;
+    border-bottom: 1px solid #eee;
+  }
+}
+@media screen and (max-width: 790px) {
+  #profile .user-informations {
+    text-align: start;
+  }
+  #profile .user-informations .infos {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+#profile .user-informations img {
+  width: 120px;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+#profile .user-informations .box-heading {
+  margin-bottom: 0.6rem;
+}
+#profile .user-informations .stars {
+  margin-bottom: 0.8rem;
+}
+#profile .user-informations .overview {
+  flex-direction: column;
+  border-right: 1px solid #eee;
+  padding-block: 1.5rem;
+}
+#profile .user-informations .infos {
+  display: flex;
+  text-align: center;
+}
+#profile .user-informations .progress-holder {
+  width: 130px;
+  height: 6px;
+  border-radius: 15px;
+  margin: 1rem 1.2rem;
+}
+#profile .user-informations .progress {
+  width: 80%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* End User Informations  */
+
+/* Start Other Informations  */
+#profile .other-informations {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 1040px) {
+  #profile .other-informations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* Start Latest Acitvities  */
+#profile .other-informations .latest-activities img {
+  width: 62px;
+}
+@media screen and (max-width: 700px) {
+  #profile .latest-activities .box {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 13px;
+  }
+  #profile .latest-activities .box .right-col {
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #profile .latest-activities .box .left-col {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+}
+/* End Latest Acitvities  */
+/* End Other Informations  */
+
+/* End Profile Style  */
+
+/* Start Projects Style  */
+#projects .project {
+  position: relative;
+}
+#projects .project .date {
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+}
+@media screen and (max-width: 450px) {
+  #projects .project .other-infos {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+/* End Projects Style  */
+
+/* Start Courses  */
+
+#courses .course {
+  position: relative;
+}
+#courses img.head {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+#courses img.avatar {
+  width: 75px;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid #fff;
+  top: 1.3rem;
+  left: 1rem;
+  z-index: 2;
+}
+@media screen and (max-width: 500px) {
+  #courses img.avatar {
+    width: 65px;
+  }
+}
+#courses .course p {
+  line-height: 1.6;
+}
+#courses .course .info-box {
+  position: relative;
+}
+#courses .course .body {
+  padding-top: 1.3rem;
+  padding-bottom: 0.6rem;
+}
+#courses .course .info-box::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  right: -100%;
+  transform: translateY(-50%);
+  background-color: #eee;
+}
+#courses .course .info-box::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  left: -100%;
+  transform: translateY(-50%);
+  background-color: #eee;
+}
+#courses .course .image-container img {
+  display: block;
+}
+#courses .course .image-container:hover img {
+  transform: scale(1.2) rotate(5deg);
+}
+/* End Courses  */
+
+/* Start Friends  */
+#friends .friend img {
+  width: 120px;
+}
+#friends .friend .icons {
+  gap: 4px;
+}
+#friends .friend .icons .icon {
+  background-color: #eee;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  width: 33px;
+  height: 33px;
+}
+#friends .friend .icons .icon:hover {
+  background-color: var(--blue-color);
+  color: #fff;
+}
+#friends .friend .footer a {
+  transition: 0.3s;
+}
+#friends .friend .footer a:hover {
+  opacity: 0.9;
+}
+#friends .friend.vip .body {
+  position: relative;
+}
+#friends .friend.vip .body::before {
+  content: "VIP";
+  position: absolute;
+  font-size: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  color: var(--orange-color);
+  opacity: 0.25;
+}
+@media screen and (max-width: 450px) {
+  #friends .friend.vip .footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* End Friends  */
+
+/* Start Files  */
+#files main .container {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+
+#files .container .statistics {
+  flex-basis: 300px;
+}
+#files .container .added-files {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+}
+@media screen and (max-width: 1050px) {
+  #files main .container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+}
+#files .container .added-files {
+  flex-grow: 1;
+}
+#files .container .file .line {
+  height: 1px;
+}
+#files .container .file img {
+  width: 65px;
+}
+#files .container .file img:hover {
+  transform: rotate(8deg);
+}
+#files .container .file a:hover {
+  color: var(--blue-color);
+}
+#files .container .statistics .icon {
+  height: 35px;
+  width: 35px;
+}
+@media screen and (max-width: 380px) {
+  #files .statistics .box {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  #files .statistics .box .left-col {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #files .container .file img {
+    width: 55px;
+  }
+}
+#files .container .statistics a:hover i {
+  animation: up-down infinite 0.8s;
+}
+@keyframes up-down {
+  100% {
+    transform: translateY(-5px);
+  }
+}
+/* End Files  */
+
+/* Start Plans  */
+#plans .plan .head {
+  flex-direction: column;
+}
+#plans .plan .head {
+  border: 3px solid white;
+  outline-width: 3px;
+  outline-style: solid;
+  border-radius: 10px;
+}
+#plans .plan:first-of-type .head {
+  background-color: var(--green-color);
+  outline-color: var(--green-color);
+}
+#plans .plan:nth-of-type(2) .head {
+  background-color: var(--blue-color);
+  outline-color: var(--blue-color);
+}
+#plans .plan:nth-of-type(3) .head {
+  background-color: var(--orange-color);
+  outline-color: var(--orange-color);
+}
+#plans .plan .body .left-col i {
+  margin-right: 0.5rem;
+}
+#plans .plan .left-col + i {
+  cursor: pointer;
+  transition: 0.3s;
+}
+#plans .plan .left-col + i:hover {
+  color: var(--blue-color);
+}
+#plans .plan .price {
+  font-size: 36px;
+  position: relative;
+  font-weight: 600;
+}
+#plans .plan .unit {
+  font-size: 23px;
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
+
+#plans .plan .box-heading {
+  font-size: 26px;
+}
+#plans .plan .box {
+  padding-block: 0.5rem;
+}
+#plans .plan .body + a {
+  padding: 0.5em 1rem;
+}
+#plans .plan .body + a:hover {
+  opacity: 0.9;
+}
+
+/* End Plans  */

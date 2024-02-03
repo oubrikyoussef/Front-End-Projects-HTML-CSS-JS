@@ -1,0 +1,11 @@
+.contact {
+  max-width: 86vw;
+  margin-inline: auto;
+  text-align: center;
+}
+.contact__link {
+  text-decoration: none;
+  color: var(--black, #000);
+  font-weight: 600;
+  transition: 0.3s;
+}

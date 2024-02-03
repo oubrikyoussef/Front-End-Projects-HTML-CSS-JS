@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main Script  -->
+    <script src="js/main.js" defer></script>
+    <!-- Main Style Sheet  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Normalize Style Sheet  -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Icons  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Play Hangman Game Online - Word Guessing Fun</title>
+    <!-- Logo (Icon Made By Dreamstale) -->
+    <link
+      rel="shortcut icon"
+      href="images/hangman_514212.png"
+      type="image/x-icon"
+    />
+    <!-- Meta tags  -->
+    <meta
+      name="description"
+      content="Play Hangman online and have fun. Test your word-guessing skills in this exciting game."
+    />
+    <!-- OGP tags  -->
+    <meta
+      property="og:title"
+      content="Play Hangman Game Online - Word Guessing Fun"
+    />
+    <meta
+      property="og:description"
+      content="Play Hangman online and have fun. Test your word-guessing skills in this exciting game."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hangman Game" />
+    <meta property="og:locale" content="en_US" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header__logo"><a href="">Hangman</a></h1>
+    </header>
+    <main>
+      <div class="main__infos">
+        <div class="infos__question"><span>LOADING ...</span></div>
+        <div class="infos__hint">
+          Hover To Reveal Hint : <span>LOADING ...</span>
+        </div>
+        <div class="infos__category">Category : <span>LOADING ...</span></div>
+      </div>
+      <div class="main__interaction">
+        <div class="interaction__hangman">
+          <div class="hangman__score"></div>
+          <div class="hang__stand part"></div>
+          <div class="hangman__hang part"></div>
+          <div class="hang__top part"></div>
+          <div class="hang__rope part"></div>
+          <div class="hang__rope-node part">
+            <div class="rope-node__man-head"></div>
+          </div>
+          <div class="hangman__back-bone part"></div>
+          <div class="hangman__hands part">
+            <div class="hangman__left-hand"></div>
+            <div class="hangman__right-hand"></div>
+          </div>
+          <div class="hangman__footes part">
+            <div class="hangman__right-feet"></div>
+            <div class="hangman__left-feet"></div>
+          </div>
+        </div>
+        <div class="interaction__keyboard">
+          <div class="keyboard__touch">A</div>
+          <div class="keyboard__touch">B</div>
+          <div class="keyboard__touch">C</div>
+          <div class="keyboard__touch">D</div>
+          <div class="keyboard__touch">E</div>
+          <div class="keyboard__touch">F</div>
+          <div class="keyboard__touch">G</div>
+          <div class="keyboard__touch">H</div>
+          <div class="keyboard__touch">I</div>
+          <div class="keyboard__touch">J</div>
+          <div class="keyboard__touch">K</div>
+          <div class="keyboard__touch">L</div>
+          <div class="keyboard__touch">M</div>
+          <div class="keyboard__touch">N</div>
+          <div class="keyboard__touch">O</div>
+          <div class="keyboard__touch">P</div>
+          <div class="keyboard__touch">Q</div>
+          <div class="keyboard__touch">R</div>
+          <div class="keyboard__touch">S</div>
+          <div class="keyboard__touch">T</div>
+          <div class="keyboard__touch">U</div>
+          <div class="keyboard__touch">V</div>
+          <div class="keyboard__touch">W</div>
+          <div class="keyboard__touch">X</div>
+          <div class="keyboard__touch">Y</div>
+          <div class="keyboard__touch">Z</div>
+          <div class="keyboard__touch">0</div>
+          <div class="keyboard__touch">1</div>
+          <div class="keyboard__touch">2</div>
+          <div class="keyboard__touch">3</div>
+          <div class="keyboard__touch">4</div>
+          <div class="keyboard__touch">5</div>
+          <div class="keyboard__touch">6</div>
+          <div class="keyboard__touch">7</div>
+          <div class="keyboard__touch">8</div>
+          <div class="keyboard__touch">9</div>
+        </div>
+      </div>
+      <div class="main__entries"></div>
+    </main>
+    <footer>
+      <h4>
+        Made With <span>&lt;3</span> By
+        <a
+          href="https://www.linkedin.com/in/youssefoubrik/"
+          target="_blank"
+          title="View Developer LinkedIn Profile"
+          ><span>Youssef</span></a
+        >
+      </h4>
+    </footer>
+    <audio src="sounds/wrong.mp3" id="wrong"></audio>
+    <audio src="sounds/correct.wav" id="correct"></audio>
+    <audio src="sounds/succes.wav" id="succes"></audio>
+    <audio src="sounds/lose.mp3" id="lose"></audio>
+  </body>
+</html>

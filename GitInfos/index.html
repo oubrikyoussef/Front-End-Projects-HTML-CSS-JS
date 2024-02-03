@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitInfos</title>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- Normalize Stylesheet -->
+    <link rel="stylesheet" href="style/normalize.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+      integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ=="
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- All Assets Are From icons8.com  -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <!-- Main Script  -->
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="loading"></div>
+    <header>
+      <a class="header__logo" href="index.html">gitInfos</a>
+      </header>
+    <main>
+      <form class="main__search">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 40 40"
+        >
+          <path
+            fill="#98ccfd"
+            d="M3.499,38.5c-0.534,0-1.036-0.208-1.414-0.585S1.5,37.035,1.5,36.501s0.208-1.036,0.585-1.414 l18.233-17.382l1.983,1.985L4.904,37.923C4.535,38.292,4.033,38.5,3.499,38.5z"
+          ></path>
+          <path
+            fill="#4788c7"
+            d="M20.31,18.405l1.293,1.294L4.559,37.561C4.276,37.844,3.899,38,3.499,38 c-0.4,0-0.777-0.156-1.06-0.439c-0.584-0.584-0.584-1.535-0.017-2.103L20.31,18.405 M20.327,17.007L1.732,34.734 c-0.976,0.976-0.976,2.558,0,3.534v0C2.22,38.756,2.859,39,3.499,39c0.64,0,1.279-0.244,1.767-0.732L23,19.683L20.327,17.007 L20.327,17.007z"
+          ></path>
+          <path
+            fill="#dff0fe"
+            d="M26,26.5c-6.893,0-12.5-5.607-12.5-12.5S19.107,1.5,26,1.5S38.5,7.107,38.5,14S32.893,26.5,26,26.5z"
+          ></path>
+          <path
+            fill="#4788c7"
+            d="M26,2c6.617,0,12,5.383,12,12s-5.383,12-12,12s-12-5.383-12-12S19.383,2,26,2 M26,1 c-7.18,0-13,5.82-13,13c0,7.18,5.82,13,13,13s13-5.82,13-13C39,6.82,33.18,1,26,1L26,1z"
+          ></path>
+        </svg>
+        <input
+          type="search"
+          name="user-input"
+          id="input"
+          placeholder="Search Github username..."
+        />
+        <input type="submit" value="Search" />
+        <p>Invalid username</p>
+      </form>
+      <div class="container">
+        <div class="developer">
+          <img src="assets/user.jpg" alt="user avatar" class="avatar" />
+
+          <div class="infos">
+            <h3 class="name">Youssef Oubrik</h3>
+            <a href="#" class="profile" target="_blank">@oubrikyoussef</a>
+            <p class="join-date">
+              Joined At <span class="date">16 Mar 2023</span>
+            </p>
+          </div>
+        </div>
+        <p class="bio">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          voluptates nam, deleniti accusamus ab incidunt facere repellendus,
+          ipsam, consequatur ratione ducimus ad dignissimos quibusdam autem?
+          Cumque qui unde illum? Delectus?
+        </p>
+        <div class="overview">
+          <div>
+            <span class="title">Repos</span
+            ><span class="detail repos-num">4</span>
+          </div>
+          <div>
+            <span class="title">Followers</span
+            ><span class="detail followers-num">5</span>
+          </div>
+          <div>
+            <span class="title">Following</span
+            ><span class="detail following-num">2</span>
+          </div>
+        </div>
+        <ul class="other-infos">
+          <li class="addresse">Morocco</li>
+          <li class="blog">
+            Blog :
+            <a href="www.youssef.com" target="_blank">www.youssef.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="repos">
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="repo">
+          <h3 class="title"><a href="">Repo</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia
+            sapiente, adipisci, ab quo natus numquam repellat reprehenderit
+            voluptate ipsum iste maxime, architecto soluta quisquam dolore
+            pariatur! Eaque, dignissimos soluta.
+          </p>
+          <div class="infos-actions">
+            <p class="creation-date">
+              Created At : <span class="time">20-03-2003</span>
+            </p>
+            <div class="clone btn">
+              <span class="span">Clone</span>
+              <i class="fa-solid fa-link"></i>
+              <div class="methods">
+                <a href="#" class="https">HTTPS</a>
+                <a href="#" class="ssh">SSH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

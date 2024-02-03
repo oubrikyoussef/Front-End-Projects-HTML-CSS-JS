@@ -1,0 +1,154 @@
+[
+    {
+    "category": "Geography",
+    "question": "What is the capital of France?",
+    "suggestions": ["Paris", "London", "Berlin", "Madrid"],
+    "correct_answer": "Paris"
+    },
+    {
+    "category": "Space",
+    "question": "Which planet is known as the Red Planet?",
+    "suggestions": ["Mars", "Venus", "Jupiter", "Saturn"],
+    "correct_answer": "Mars"
+    },
+    {
+    "category": "Biology",
+    "question": "What is the largest mammal in the world?",
+    "suggestions": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+    "correct_answer": "Blue Whale"
+    },
+    {
+    "category": "Literature",
+    "question": "Who wrote the play 'Romeo and Juliet'?",
+    "suggestions": ["William Shakespeare", "Jane Austen", "Charles Dickens", "Mark Twain"],
+    "correct_answer": "William Shakespeare"
+    },
+    {
+    "category": "Science",
+    "question": "What gas do plants absorb from the atmosphere?",
+    "suggestions": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "correct_answer": "Carbon Dioxide"
+    },
+    {
+    "category": "Anatomy",
+    "question": "What is the largest organ in the human body?",
+    "suggestions": ["Heart", "Brain", "Liver", "Skin"],
+    "correct_answer": "Skin"
+    },
+    {
+    "category": "Science",
+    "question": "Which gas do humans need to breathe in order to survive?",
+    "suggestions": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Methane"],
+    "correct_answer": "Oxygen"
+    },
+    {
+    "category": "Science",
+    "question": "What is the chemical symbol for the element gold?",
+    "suggestions": ["Go", "Au", "Ag", "Ge"],
+    "correct_answer": "Au"
+    },
+    {
+    "category": "History",
+    "question": "In which year did Christopher Columbus first arrive in the Americas?",
+    "suggestions": ["1492", "1520", "1607", "1776"],
+    "correct_answer": "1492"
+    },
+    {
+    "category": "Space",
+    "question": "What is the largest planet in our solar system?",
+    "suggestions": ["Mars", "Venus", "Jupiter", "Saturn"],
+    "correct_answer": "Jupiter"
+    },
+    {
+    "category": "Science",
+    "question": "Which famous scientist is known for the theory of general relativity?",
+    "suggestions": ["Isaac Newton", "Stephen Hawking", "Albert Einstein", "Galileo Galilei"],
+    "correct_answer": "Albert Einstein"
+    },
+    {
+    "category": "Geography",
+    "question": "How many continents are there on Earth?",
+    "suggestions": ["3", "5", "6", "7"],
+    "correct_answer": "7"
+    },
+    {
+    "category": "Science",
+    "question": "Which gas makes up the majority of Earth's atmosphere?",
+    "suggestions": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+    "correct_answer": "Nitrogen"
+    },
+    {
+    "category": "Geography",
+    "question": "What is the largest ocean in the world?",
+    "suggestions": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "correct_answer": "Pacific Ocean"
+    },
+    {
+    "category": "Space",
+    "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+    "suggestions": ["Mars", "Venus", "Jupiter", "Saturn"],
+    "correct_answer": "Venus"
+    },
+    {
+    "category": "Science",
+    "question": "What is the chemical symbol for the element oxygen?",
+    "suggestions": ["Ox", "Oy", "Oxg", "O"],
+    "correct_answer": "O"
+    },
+    {
+    "category": "Literature",
+    "question": "Who is the author of 'To Kill a Mockingbird'?",
+    "suggestions": ["George Orwell", "Harper Lee", "J.K. Rowling", "F. Scott Fitzgerald"],
+    "correct_answer": "Harper Lee"
+    },
+    {
+    "category": "Geography",
+    "question": "What is the tallest mountain in the world?",
+    "suggestions": ["Kilimanjaro", "Mount Everest", "Mount Fuji", "Mount McKinley"],
+    "correct_answer": "Mount Everest"
+    },
+    {
+    "category": "Biology",
+    "question": "What is the largest species of shark?",
+    "suggestions": ["Hammerhead Shark", "Tiger Shark", "Great White Shark", "Whale Shark"],
+    "correct_answer": "Whale Shark"
+    },
+    {
+    "category": "Art",
+    "question": "Who painted the 'Mona Lisa'?",
+    "suggestions": ["Pablo Picasso", "Leonardo da Vinci", "Vincent van Gogh", "Michelangelo"],
+    "correct_answer": "Leonardo da Vinci"
+    },
+    {
+    "category": "Science",
+    "question": "What is the chemical symbol for the element carbon?",
+    "suggestions": ["C", "Ca", "Co", "Cr"],
+    "correct_answer": "C"
+    },
+    {
+    "category": "Geography",
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "suggestions": ["China", "South Korea", "Japan", "Vietnam"],
+    "correct_answer": "Japan"
+    },
+    {
+    "category": "Space",
+    "question": "What is the smallest planet in our solar system?",
+    "suggestions": ["Mars", "Venus", "Mercury", "Pluto"],
+    "correct_answer": "Mercury"
+    },
+    {
+    "category": "Literature",
+    "question": "Who wrote the novel '1984'?",
+    "suggestions": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "H.G. Wells"],
+    "correct_answer": "George Orwell"
+    },
+    {
+    "category": "Science",
+    "question": "What is the chemical symbol for the element silver?",
+    "suggestions": ["Si", "Ag", "Sl", "Sr"],
+    "correct_answer": "Ag"
+    }
+]
+  
+  
